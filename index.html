@@ -1,1480 +1,2598 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MyHoJo Travels — My Holiday, My Journey | Tour Packages, Flights, Hotels &amp; More</title>
-  <meta name="description" content="MyHoJo Travels (My Holiday My Journey) — Karnal based travel agency offering customized domestic &amp; international tour packages, honeymoon &amp; group tours, flight, hotel, train, bus &amp; visa bookings at budget-friendly prices. सपनों की यात्रा, आपके बजट में।" />
-  <meta name="keywords" content="MyHoJo Travels, My Holiday My Journey, Karnal travel agency, Haryana tour operator, holiday packages India, international tour packages, honeymoon packages, religious tours, flight booking, hotel booking, visa services, budget travel India" />
-  <meta name="theme-color" content="#0a1d4d" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      MyHoJo Travels — My Holiday, My Journey | Tour Packages, Flights, Hotels
+      &amp; More
+    </title>
+    <meta
+      name="description"
+      content="MyHoJo Travels (My Holiday My Journey) — Karnal based travel agency offering customized domestic &amp; international tour packages, honeymoon &amp; group tours, flight, hotel, train, bus &amp; visa bookings at budget-friendly prices. सपनों की यात्रा, आपके बजट में।"
+    />
+    <meta
+      name="keywords"
+      content="MyHoJo Travels, My Holiday My Journey, Karnal travel agency, Haryana tour operator, holiday packages India, international tour packages, honeymoon packages, religious tours, flight booking, hotel booking, visa services, budget travel India"
+    />
+    <meta name="theme-color" content="#0a1d4d" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="MyHoJo Travels — My Holiday, My Journey" />
-  <meta property="og:description" content="Customized domestic &amp; international tour packages, flights, hotels, visas and more — all in one place, at the best prices. Based in Karnal, Haryana." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_IN" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="MyHoJo Travels — My Holiday, My Journey"
+    />
+    <meta
+      property="og:description"
+      content="Customized domestic &amp; international tour packages, flights, hotels, visas and more — all in one place, at the best prices. Based in Karnal, Haryana."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230a1d4d'/%3E%3Cpath d='M52 24L22 36l-8-3 5-4 22-7 11-2z' fill='%23f17321' transform='rotate(-15 32 32)'/%3E%3C/svg%3E" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230a1d4d'/%3E%3Cpath d='M52 24L22 36l-8-3 5-4 22-7 11-2z' fill='%23f17321' transform='rotate(-15 32 32)'/%3E%3C/svg%3E"
+    />
 
-  <!-- Fonts: Fraunces (display serif with character), Manrope (body), Tiro Devanagari Hindi (Hindi script) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet" />
+    <!-- Fonts: Fraunces (display serif with character), Manrope (body), Tiro Devanagari Hindi (Hindi script) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome (free CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Font Awesome (free CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['Fraunces', 'Georgia', 'serif'],
-            sans: ['Manrope', 'system-ui', 'sans-serif'],
-            hindi: ['"Tiro Devanagari Hindi"', '"Noto Sans Devanagari"', 'serif'],
-          },
-          colors: {
-            navy: {
-              50: '#eef1f9',
-              100: '#d4daec',
-              200: '#a9b6d9',
-              500: '#3d56a8',
-              700: '#152c75',
-              800: '#0e2160',
-              900: '#0a1d4d',
-              950: '#06112e',
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: ["Manrope", "system-ui", "sans-serif"],
+              hindi: [
+                '"Tiro Devanagari Hindi"',
+                '"Noto Sans Devanagari"',
+                "serif",
+              ],
             },
-            orange: {
-              50: '#fef3ea',
-              100: '#fde3cd',
-              400: '#f59433',
-              500: '#f17321',
-              600: '#e15a0d',
-              700: '#b94609',
+            colors: {
+              navy: {
+                50: "#eef1f9",
+                100: "#d4daec",
+                200: "#a9b6d9",
+                500: "#3d56a8",
+                700: "#152c75",
+                800: "#0e2160",
+                900: "#0a1d4d",
+                950: "#06112e",
+              },
+              orange: {
+                50: "#fef3ea",
+                100: "#fde3cd",
+                400: "#f59433",
+                500: "#f17321",
+                600: "#e15a0d",
+                700: "#b94609",
+              },
+              gold: {
+                400: "#ffd24a",
+                500: "#ffc220",
+                600: "#e0a800",
+              },
+              cream: "#fbf6ee",
+              paper: "#fffdf8",
             },
-            gold: {
-              400: '#ffd24a',
-              500: '#ffc220',
-              600: '#e0a800',
+            boxShadow: {
+              soft: "0 10px 30px -10px rgba(10,29,77,0.18)",
+              lift: "0 25px 50px -12px rgba(10,29,77,0.25)",
+              ring: "0 0 0 1px rgba(10,29,77,0.06), 0 10px 30px -10px rgba(10,29,77,0.18)",
             },
-            cream: '#fbf6ee',
-            paper: '#fffdf8',
           },
-          boxShadow: {
-            soft: '0 10px 30px -10px rgba(10,29,77,0.18)',
-            lift: '0 25px 50px -12px rgba(10,29,77,0.25)',
-            ring: '0 0 0 1px rgba(10,29,77,0.06), 0 10px 30px -10px rgba(10,29,77,0.18)',
-          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --navy-900: #0a1d4d;
+        --navy-800: #0e2160;
+        --navy-700: #152c75;
+        --orange: #f17321;
+        --orange-light: #f59433;
+        --gold: #ffc220;
+        --whatsapp: #25d366;
+        --whatsapp-dark: #1da851;
+        --cream: #fbf6ee;
+        --paper: #fffdf8;
+        --ink: #0a1330;
+        --muted: #5c6478;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Manrope", system-ui, sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .font-display {
+        font-family: "Fraunces", Georgia, serif;
+        font-optical-sizing: auto;
+      }
+      .font-hindi {
+        font-family: "Tiro Devanagari Hindi", "Noto Sans Devanagari", serif;
+      }
+
+      /* === Header === */
+      .header-glass {
+        background: rgba(255, 253, 248, 0.85);
+        backdrop-filter: saturate(180%) blur(14px);
+        -webkit-backdrop-filter: saturate(180%) blur(14px);
+      }
+      .nav-link {
+        position: relative;
+        padding-bottom: 4px;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: var(--orange);
+        transition: width 240ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* === Hero === */
+      .hero-wrap {
+        position: relative;
+        overflow: hidden;
+        background: var(--navy-900);
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=80");
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.05);
+        animation: heroZoom 20s ease-in-out infinite alternate;
+      }
+      @keyframes heroZoom {
+        from {
+          transform: scale(1.05);
+        }
+        to {
+          transform: scale(1.15);
         }
       }
-    }
-  </script>
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at 20% 30%,
+            rgba(241, 115, 33, 0.25),
+            transparent 55%
+          ),
+          linear-gradient(
+            135deg,
+            rgba(10, 29, 77, 0.92) 0%,
+            rgba(10, 29, 77, 0.78) 45%,
+            rgba(10, 29, 77, 0.55) 100%
+          );
+      }
+      .hero-noise {
+        position: absolute;
+        inset: 0;
+        opacity: 0.18;
+        mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
+      }
 
-  <style>
-    :root {
-      --navy-900: #0a1d4d;
-      --navy-800: #0e2160;
-      --navy-700: #152c75;
-      --orange: #f17321;
-      --orange-light: #f59433;
-      --gold: #ffc220;
-      --whatsapp: #25d366;
-      --whatsapp-dark: #1da851;
-      --cream: #fbf6ee;
-      --paper: #fffdf8;
-      --ink: #0a1330;
-      --muted: #5c6478;
-    }
+      /* Plane animation */
+      .plane-fly {
+        animation: planeFly 14s linear infinite;
+      }
+      @keyframes planeFly {
+        0% {
+          transform: translate(-10vw, 4vw) rotate(-8deg);
+          opacity: 0;
+        }
+        8% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(110vw, -8vw) rotate(-8deg);
+          opacity: 0;
+        }
+      }
+      .plane-trail {
+        stroke-dasharray: 8 10;
+        animation: dash 2s linear infinite;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: -36;
+        }
+      }
 
-    html { scroll-behavior: smooth; }
+      /* Floating decoration */
+      .float-soft {
+        animation: floaty 6s ease-in-out infinite;
+      }
+      .float-soft-2 {
+        animation: floaty 8s ease-in-out infinite reverse;
+      }
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-14px);
+        }
+      }
 
-    body {
-      font-family: 'Manrope', system-ui, sans-serif;
-      background: var(--paper);
-      color: var(--ink);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+      /* Reveal on scroll */
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-    .font-display { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; }
-    .font-hindi { font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif; }
+      /* Service card */
+      .svc-card {
+        position: relative;
+        background: white;
+        border: 1px solid rgba(10, 29, 77, 0.08);
+        border-radius: 18px;
+        padding: 22px;
+        transition:
+          transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+          box-shadow 320ms ease,
+          border-color 320ms ease;
+        overflow: hidden;
+      }
+      .svc-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(241, 115, 33, 0),
+          rgba(241, 115, 33, 0) 70%,
+          rgba(255, 194, 32, 0.08)
+        );
+        opacity: 0;
+        transition: opacity 320ms ease;
+        pointer-events: none;
+      }
+      .svc-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 24px 48px -16px rgba(10, 29, 77, 0.18);
+        border-color: rgba(241, 115, 33, 0.35);
+      }
+      .svc-card:hover::before {
+        opacity: 1;
+      }
+      .svc-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #0a1d4d 0%, #152c75 100%);
+        color: #ffc220;
+        font-size: 18px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      }
+      .svc-icon.accent {
+        background: linear-gradient(135deg, #f17321 0%, #f59433 100%);
+        color: white;
+      }
 
-    /* === Header === */
-    .header-glass {
-      background: rgba(255, 253, 248, 0.85);
-      backdrop-filter: saturate(180%) blur(14px);
-      -webkit-backdrop-filter: saturate(180%) blur(14px);
-    }
-    .nav-link {
-      position: relative;
-      padding-bottom: 4px;
-    }
-    .nav-link::after {
-      content: "";
-      position: absolute;
-      left: 0; bottom: 0;
-      width: 0; height: 2px;
-      background: var(--orange);
-      transition: width 240ms cubic-bezier(.4,0,.2,1);
-    }
-    .nav-link:hover::after { width: 100%; }
+      /* Destination card */
+      .dest-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        aspect-ratio: 4 / 5;
+        box-shadow: 0 14px 36px -14px rgba(10, 29, 77, 0.35);
+        isolation: isolate;
+      }
+      .dest-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 800ms cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .dest-card:hover img {
+        transform: scale(1.08);
+      }
+      .dest-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 35%,
+          rgba(0, 0, 0, 0.25) 60%,
+          rgba(10, 29, 77, 0.92) 100%
+        );
+      }
 
-    /* === Hero === */
-    .hero-wrap {
-      position: relative;
-      overflow: hidden;
-      background: var(--navy-900);
-    }
-    .hero-bg {
-      position: absolute; inset: 0;
-      background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=80');
-      background-size: cover;
-      background-position: center;
-      transform: scale(1.05);
-      animation: heroZoom 20s ease-in-out infinite alternate;
-    }
-    @keyframes heroZoom {
-      from { transform: scale(1.05); }
-      to   { transform: scale(1.15); }
-    }
-    .hero-overlay {
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(circle at 20% 30%, rgba(241,115,33,0.25), transparent 55%),
-        linear-gradient(135deg, rgba(10,29,77,0.92) 0%, rgba(10,29,77,0.78) 45%, rgba(10,29,77,0.55) 100%);
-    }
-    .hero-noise {
-      position: absolute; inset: 0; opacity: 0.18; mix-blend-mode: overlay;
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
-    }
+      /* Buttons */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        background: var(--orange);
+        color: white;
+        font-weight: 700;
+        border-radius: 999px;
+        box-shadow: 0 10px 24px -8px rgba(241, 115, 33, 0.55);
+        transition:
+          transform 200ms ease,
+          box-shadow 200ms ease,
+          background 200ms ease;
+      }
+      .btn-primary:hover {
+        background: var(--orange-light);
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px -8px rgba(241, 115, 33, 0.6);
+      }
+      .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        background: var(--whatsapp);
+        color: white;
+        font-weight: 700;
+        border-radius: 999px;
+        box-shadow: 0 10px 24px -8px rgba(37, 211, 102, 0.55);
+        transition:
+          transform 200ms ease,
+          box-shadow 200ms ease,
+          background 200ms ease;
+      }
+      .btn-whatsapp:hover {
+        background: var(--whatsapp-dark);
+        transform: translateY(-2px);
+      }
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        background: transparent;
+        color: white;
+        font-weight: 600;
+        border-radius: 999px;
+        border: 1.5px solid rgba(255, 255, 255, 0.4);
+        transition:
+          background 200ms ease,
+          border-color 200ms ease;
+      }
+      .btn-ghost:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.7);
+      }
 
-    /* Plane animation */
-    .plane-fly {
-      animation: planeFly 14s linear infinite;
-    }
-    @keyframes planeFly {
-      0%   { transform: translate(-10vw, 4vw) rotate(-8deg); opacity: 0; }
-      8%   { opacity: 1; }
-      90%  { opacity: 1; }
-      100% { transform: translate(110vw, -8vw) rotate(-8deg); opacity: 0; }
-    }
-    .plane-trail {
-      stroke-dasharray: 8 10;
-      animation: dash 2s linear infinite;
-    }
-    @keyframes dash {
-      to { stroke-dashoffset: -36; }
-    }
+      /* Bilingual ribbon */
+      .ribbon-cta {
+        background:
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 194, 32, 0.18),
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 10% 90%,
+            rgba(241, 115, 33, 0.18),
+            transparent 50%
+          ),
+          linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
+      }
 
-    /* Floating decoration */
-    .float-soft { animation: floaty 6s ease-in-out infinite; }
-    .float-soft-2 { animation: floaty 8s ease-in-out infinite reverse; }
-    @keyframes floaty {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-14px); }
-    }
+      /* Diagonal stripe decoration */
+      .stripe-deco {
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(255, 194, 32, 0.18) 0 8px,
+          transparent 8px 18px
+        );
+        border-radius: 50%;
+      }
 
-    /* Reveal on scroll */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 700ms cubic-bezier(.16,1,.3,1), transform 700ms cubic-bezier(.16,1,.3,1);
-    }
-    .reveal.in { opacity: 1; transform: translateY(0); }
+      /* Trust strip icons */
+      .trust-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--cream);
+        color: var(--orange);
+        border: 1.5px solid rgba(241, 115, 33, 0.25);
+      }
 
-    /* Service card */
-    .svc-card {
-      position: relative;
-      background: white;
-      border: 1px solid rgba(10, 29, 77, 0.08);
-      border-radius: 18px;
-      padding: 22px;
-      transition: transform 320ms cubic-bezier(.16,1,.3,1), box-shadow 320ms ease, border-color 320ms ease;
-      overflow: hidden;
-    }
-    .svc-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(241,115,33,0.0), rgba(241,115,33,0.0) 70%, rgba(255,194,32,0.08));
-      opacity: 0;
-      transition: opacity 320ms ease;
-      pointer-events: none;
-    }
-    .svc-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 48px -16px rgba(10,29,77,0.18);
-      border-color: rgba(241,115,33,0.35);
-    }
-    .svc-card:hover::before { opacity: 1; }
-    .svc-icon {
-      width: 48px; height: 48px;
-      border-radius: 14px;
-      display: inline-flex; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, #0a1d4d 0%, #152c75 100%);
-      color: #ffc220;
-      font-size: 18px;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
-    }
-    .svc-icon.accent {
-      background: linear-gradient(135deg, #f17321 0%, #f59433 100%);
-      color: white;
-    }
+      /* Form styling */
+      .input-field {
+        width: 100%;
+        padding: 12px 14px;
+        background: white;
+        border: 1.5px solid rgba(10, 29, 77, 0.12);
+        border-radius: 12px;
+        font-size: 14px;
+        font-family: inherit;
+        color: var(--ink);
+        transition:
+          border-color 180ms ease,
+          box-shadow 180ms ease;
+      }
+      .input-field:focus {
+        outline: none;
+        border-color: var(--orange);
+        box-shadow: 0 0 0 3px rgba(241, 115, 33, 0.12);
+      }
+      .input-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--navy-900);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        display: block;
+      }
 
-    /* Destination card */
-    .dest-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 20px;
-      aspect-ratio: 4 / 5;
-      box-shadow: 0 14px 36px -14px rgba(10,29,77,0.35);
-      isolation: isolate;
-    }
-    .dest-card img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 800ms cubic-bezier(.2,.7,.2,1);
-    }
-    .dest-card:hover img { transform: scale(1.08); }
-    .dest-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.25) 60%, rgba(10,29,77,0.92) 100%);
-    }
+      /* Section eyebrow */
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--orange);
+        padding: 6px 14px;
+        background: var(--orange-50, #fef3ea);
+        border-radius: 999px;
+        border: 1px solid rgba(241, 115, 33, 0.2);
+      }
+      .eyebrow-dark {
+        color: var(--gold);
+        background: rgba(255, 194, 32, 0.1);
+        border-color: rgba(255, 194, 32, 0.25);
+      }
 
-    /* Buttons */
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 20px;
-      background: var(--orange);
-      color: white;
-      font-weight: 700;
-      border-radius: 999px;
-      box-shadow: 0 10px 24px -8px rgba(241,115,33,0.55);
-      transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
-    }
-    .btn-primary:hover {
-      background: var(--orange-light);
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px -8px rgba(241,115,33,0.6);
-    }
-    .btn-whatsapp {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 20px;
-      background: var(--whatsapp);
-      color: white;
-      font-weight: 700;
-      border-radius: 999px;
-      box-shadow: 0 10px 24px -8px rgba(37,211,102,0.55);
-      transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
-    }
-    .btn-whatsapp:hover {
-      background: var(--whatsapp-dark);
-      transform: translateY(-2px);
-    }
-    .btn-ghost {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 20px;
-      background: transparent;
-      color: white;
-      font-weight: 600;
-      border-radius: 999px;
-      border: 1.5px solid rgba(255,255,255,0.4);
-      transition: background 200ms ease, border-color 200ms ease;
-    }
-    .btn-ghost:hover {
-      background: rgba(255,255,255,0.08);
-      border-color: rgba(255,255,255,0.7);
-    }
+      /* Floating WhatsApp */
+      .fab-whatsapp {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 50;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--whatsapp);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        box-shadow: 0 12px 30px -8px rgba(37, 211, 102, 0.6);
+        animation: pulseRing 2.2s ease-out infinite;
+      }
+      @keyframes pulseRing {
+        0% {
+          box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0.55),
+            0 12px 30px -8px rgba(37, 211, 102, 0.6);
+        }
+        70% {
+          box-shadow:
+            0 0 0 20px rgba(37, 211, 102, 0),
+            0 12px 30px -8px rgba(37, 211, 102, 0.6);
+        }
+        100% {
+          box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0),
+            0 12px 30px -8px rgba(37, 211, 102, 0.6);
+        }
+      }
+      .fab-whatsapp:hover {
+        background: var(--whatsapp-dark);
+      }
 
-    /* Bilingual ribbon */
-    .ribbon-cta {
-      background:
-        radial-gradient(circle at 80% 20%, rgba(255,194,32,0.18), transparent 50%),
-        radial-gradient(circle at 10% 90%, rgba(241,115,33,0.18), transparent 50%),
-        linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
-    }
+      /* Instagram gradient */
+      .ig-gradient {
+        background: radial-gradient(
+          circle at 30% 110%,
+          #fdf497,
+          #fd5949 35%,
+          #d6249f 60%,
+          #285aeb 100%
+        );
+      }
 
-    /* Diagonal stripe decoration */
-    .stripe-deco {
-      position: absolute;
-      width: 240px; height: 240px;
-      background: repeating-linear-gradient(45deg, rgba(255,194,32,0.18) 0 8px, transparent 8px 18px);
-      border-radius: 50%;
-    }
+      /* Subtle dot grid */
+      .dot-grid {
+        background-image: radial-gradient(
+          rgba(10, 29, 77, 0.08) 1px,
+          transparent 1px
+        );
+        background-size: 22px 22px;
+      }
 
-    /* Trust strip icons */
-    .trust-icon {
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      background: var(--cream);
-      color: var(--orange);
-      border: 1.5px solid rgba(241,115,33,0.25);
-    }
+      /* Footer */
+      footer a {
+        transition: color 180ms ease;
+      }
 
-    /* Form styling */
-    .input-field {
-      width: 100%;
-      padding: 12px 14px;
-      background: white;
-      border: 1.5px solid rgba(10,29,77,0.12);
-      border-radius: 12px;
-      font-size: 14px;
-      font-family: inherit;
-      color: var(--ink);
-      transition: border-color 180ms ease, box-shadow 180ms ease;
-    }
-    .input-field:focus {
-      outline: none;
-      border-color: var(--orange);
-      box-shadow: 0 0 0 3px rgba(241,115,33,0.12);
-    }
-    .input-label {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--navy-900);
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-      display: block;
-    }
+      /* Mobile menu */
+      .mobile-menu {
+        display: none;
+      }
+      .mobile-menu.open {
+        display: block;
+      }
 
-    /* Section eyebrow */
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--orange);
-      padding: 6px 14px;
-      background: var(--orange-50, #fef3ea);
-      border-radius: 999px;
-      border: 1px solid rgba(241,115,33,0.2);
-    }
-    .eyebrow-dark {
-      color: var(--gold);
-      background: rgba(255,194,32,0.1);
-      border-color: rgba(255,194,32,0.25);
-    }
+      /* Form success toast */
+      .toast {
+        position: fixed;
+        bottom: 92px;
+        right: 18px;
+        background: var(--navy-900);
+        color: white;
+        padding: 12px 18px;
+        border-radius: 12px;
+        box-shadow: 0 12px 30px -8px rgba(10, 29, 77, 0.4);
+        font-size: 14px;
+        z-index: 60;
+        transform: translateY(20px);
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          transform 240ms ease,
+          opacity 240ms ease;
+      }
+      .toast.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
 
-    /* Floating WhatsApp */
-    .fab-whatsapp {
-      position: fixed;
-      right: 18px; bottom: 18px;
-      z-index: 50;
-      width: 60px; height: 60px;
-      border-radius: 50%;
-      background: var(--whatsapp);
-      color: white;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 12px 30px -8px rgba(37,211,102,0.6);
-      animation: pulseRing 2.2s ease-out infinite;
-    }
-    @keyframes pulseRing {
-      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.55), 0 12px 30px -8px rgba(37,211,102,0.6); }
-      70%  { box-shadow: 0 0 0 20px rgba(37,211,102,0), 0 12px 30px -8px rgba(37,211,102,0.6); }
-      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 12px 30px -8px rgba(37,211,102,0.6); }
-    }
-    .fab-whatsapp:hover { background: var(--whatsapp-dark); }
-
-    /* Instagram gradient */
-    .ig-gradient {
-      background: radial-gradient(circle at 30% 110%, #fdf497, #fd5949 35%, #d6249f 60%, #285AEB 100%);
-    }
-
-    /* Subtle dot grid */
-    .dot-grid {
-      background-image: radial-gradient(rgba(10,29,77,0.08) 1px, transparent 1px);
-      background-size: 22px 22px;
-    }
-
-    /* Footer */
-    footer a { transition: color 180ms ease; }
-
-    /* Mobile menu */
-    .mobile-menu { display: none; }
-    .mobile-menu.open { display: block; }
-
-    /* Form success toast */
-    .toast {
-      position: fixed;
-      bottom: 92px; right: 18px;
-      background: var(--navy-900);
-      color: white;
-      padding: 12px 18px;
-      border-radius: 12px;
-      box-shadow: 0 12px 30px -8px rgba(10,29,77,0.4);
-      font-size: 14px;
-      z-index: 60;
-      transform: translateY(20px);
-      opacity: 0;
-      pointer-events: none;
-      transition: transform 240ms ease, opacity 240ms ease;
-    }
-    .toast.show { transform: translateY(0); opacity: 1; }
-
-    /* Small responsive tweaks */
-    @media (max-width: 640px) {
-      .hero-bg { background-position: center; }
-    }
-  </style>
-</head>
-<body>
-
-<!-- ============================================ -->
-<!-- HEADER                                       -->
-<!-- ============================================ -->
-<header class="header-glass sticky top-0 z-40 border-b border-navy-900/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 sm:h-20">
-      <!-- Logo -->
-      <a href="#top" class="flex items-center gap-3 group">
-        <!-- Inline SVG logo: navy circle, orange ribbon, plane -->
-        <img src="https://infokey-public-1.s3.ap-south-1.amazonaws.com/multi-client-website-props/hojo-travels-logo.png" alt="Hojo Travels" loading="lazy" style="width: 50px;" />
-        <div class="flex flex-col leading-tight">
-          <span class="font-display text-xl sm:text-2xl font-700 text-navy-900 tracking-tight" style="font-weight:700;">
-            My<span class="text-orange-500">Ho</span>Jo <span class="text-navy-700 font-500" style="font-weight:500;">Travels</span>
-          </span>
-          <span class="text-[10px] sm:text-xs text-navy-900/60 tracking-widest uppercase">My Holiday · My Journey</span>
-        </div>
-      </a>
-
-      <!-- Desktop nav -->
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-navy-900/80">
-        <a href="#services" class="nav-link hover:text-orange-500">Services</a>
-        <a href="#destinations" class="nav-link hover:text-orange-500">Destinations</a>
-        <a href="#why-us" class="nav-link hover:text-orange-500">Why Us</a>
-        <a href="#about" class="nav-link hover:text-orange-500">About</a>
-        <a href="#contact" class="nav-link hover:text-orange-500">Contact</a>
-      </nav>
-
-      <div class="hidden sm:flex items-center gap-2">
-        <a href="tel:+917988816715" class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-navy-900/15 text-navy-900 text-sm font-semibold hover:bg-navy-900/5 transition">
-          <i class="fa-solid fa-phone text-orange-500 text-xs"></i>
-          <span>79888 16715</span>
-        </a>
-        <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip." target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25d366] text-white text-sm font-semibold hover:bg-[#1da851] transition">
-          <i class="fa-brands fa-whatsapp text-base"></i>
-          <span class="hidden sm:inline">WhatsApp</span>
-        </a>
-      </div>
-
-      <!-- Mobile menu toggle -->
-      <button id="menuBtn" class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-navy-900 hover:bg-navy-900/5" aria-label="Open menu">
-        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
-      </button>
-    </div>
-
-    <!-- Mobile nav -->
-    <div id="mobileMenu" class="mobile-menu lg:hidden pb-4">
-      <div class="flex flex-col gap-1 text-sm font-semibold text-navy-900/90 pt-2 border-t border-navy-900/10">
-        <a href="#services" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5">Services</a>
-        <a href="#destinations" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5">Destinations</a>
-        <a href="#why-us" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5">Why Us</a>
-        <a href="#about" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5">About</a>
-        <a href="#contact" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5">Contact</a>
-        <div class="mt-2 grid grid-cols-2 gap-2">
-          <a href="tel:+917988816715" class="inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-full border border-navy-900/15 text-navy-900 text-xs font-semibold">
-            <i class="fa-solid fa-phone text-orange-500"></i> Call
+      /* Small responsive tweaks */
+      @media (max-width: 640px) {
+        .hero-bg {
+          background-position: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!-- HEADER                                       -->
+    <!-- ============================================ -->
+    <header class="header-glass sticky top-0 z-40 border-b border-navy-900/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Logo -->
+          <a href="#top" class="flex items-center gap-3 group">
+            <!-- Inline SVG logo: navy circle, orange ribbon, plane -->
+            <img
+              src="https://infokey-public-1.s3.ap-south-1.amazonaws.com/n8n-websites/myhojotravels/props/hojo-travels-logo.png"
+              alt="Hojo Travels"
+              loading="lazy"
+              style="width: 50px"
+            />
+            <div class="flex flex-col leading-tight">
+              <span
+                class="font-display text-xl sm:text-2xl font-700 text-navy-900 tracking-tight"
+                style="font-weight: 700"
+              >
+                My<span class="text-orange-500">Ho</span>Jo
+                <span class="text-navy-700 font-500" style="font-weight: 500"
+                  >Travels</span
+                >
+              </span>
+              <span
+                class="text-[10px] sm:text-xs text-navy-900/60 tracking-widest uppercase"
+                >My Holiday · My Journey</span
+              >
+            </div>
           </a>
-          <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-full bg-[#25d366] text-white text-xs font-semibold">
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
 
-<main id="top">
+          <!-- Desktop nav -->
+          <nav
+            class="hidden lg:flex items-center gap-8 text-sm font-semibold text-navy-900/80"
+          >
+            <a href="#services" class="nav-link hover:text-orange-500"
+              >Services</a
+            >
+            <a href="#destinations" class="nav-link hover:text-orange-500"
+              >Destinations</a
+            >
+            <a href="#why-us" class="nav-link hover:text-orange-500">Why Us</a>
+            <a href="#about" class="nav-link hover:text-orange-500">About</a>
+            <a href="#contact" class="nav-link hover:text-orange-500"
+              >Contact</a
+            >
+          </nav>
 
-<!-- ============================================ -->
-<!-- HERO                                         -->
-<!-- ============================================ -->
-<section class="hero-wrap text-white">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-noise"></div>
+          <div class="hidden sm:flex items-center gap-2">
+            <a
+              href="tel:+917988816715"
+              class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-navy-900/15 text-navy-900 text-sm font-semibold hover:bg-navy-900/5 transition"
+            >
+              <i class="fa-solid fa-phone text-orange-500 text-xs"></i>
+              <span>79888 16715</span>
+            </a>
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25d366] text-white text-sm font-semibold hover:bg-[#1da851] transition"
+            >
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span class="hidden sm:inline">WhatsApp</span>
+            </a>
+          </div>
 
-  <!-- Flying plane SVG -->
-  <div class="absolute top-[12%] left-0 right-0 pointer-events-none hidden sm:block">
-    <svg width="100%" height="80" viewBox="0 0 1200 80" preserveAspectRatio="none">
-      <g class="plane-fly">
-        <path class="plane-trail" d="M0 40 Q40 28 100 40" stroke="rgba(255,194,32,0.55)" stroke-width="1.5" fill="none"/>
-        <g transform="translate(100 40)">
-          <path d="M-22 0 L18 -7 L24 -2 L18 0 L24 2 L18 7 Z" fill="#ffc220"/>
-          <path d="M-2 -7 L8 -14 L11 -12 L0 -4 Z" fill="#ffc220"/>
-          <path d="M-2 7 L8 14 L11 12 L0 4 Z" fill="#ffc220"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-
-  <!-- Decorative shapes -->
-  <div class="stripe-deco hidden md:block" style="top:18%; right:-80px; opacity:0.5;"></div>
-
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
-    <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-      <!-- Left: text -->
-      <div class="lg:col-span-7 reveal">
-        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-[11px] sm:text-xs font-semibold tracking-widest uppercase text-gold-400">
-          <i class="fa-solid fa-location-dot text-orange-400"></i>
-          Karnal, Haryana · Trusted Travel Partner
-        </span>
-
-        <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl leading-[1.02] mt-5 mb-4" style="font-weight:600;">
-          My Holiday,<br>
-          <span class="italic text-gold-400" style="font-weight:500;">My Journey</span> —<br>
-          <span class="text-white" style="font-weight:600;">crafted for you.</span>
-        </h1>
-
-        <p class="font-hindi text-xl sm:text-2xl text-orange-400 mb-5" style="font-style:italic;">
-          सपनों की यात्रा, आपके बजट में। ✨
-        </p>
-
-        <p class="text-white/80 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
-          From the hills of Manali to the beaches of Bali — MyHoJo Travels handles every detail of your trip. Flights, hotels, visas, packages, transfers — all under one roof, at honest, budget-friendly prices.
-        </p>
-
-        <div class="flex flex-wrap items-center gap-3 mb-8">
-          <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20plan%20a%20trip.%20Please%20share%20details." target="_blank" rel="noopener" class="btn-whatsapp">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
-            <span>Chat on WhatsApp</span>
-          </a>
-          <a href="tel:+917988816715" class="btn-primary">
-            <i class="fa-solid fa-phone-volume"></i>
-            <span>Call: 79888 16715</span>
-          </a>
-          <a href="#services" class="btn-ghost">
-            <span>Explore Services</span>
-            <i class="fa-solid fa-arrow-right text-sm"></i>
-          </a>
+          <!-- Mobile menu toggle -->
+          <button
+            id="menuBtn"
+            class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-navy-900 hover:bg-navy-900/5"
+            aria-label="Open menu"
+          >
+            <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+          </button>
         </div>
 
-        <!-- Trust pills -->
-        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm text-white/75">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-circle-check text-gold-400"></i>
-            <span>Best Price Guaranteed</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-circle-check text-gold-400"></i>
-            <span>24×7 Support</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-circle-check text-gold-400"></i>
-            <span>No Hidden Charges</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-circle-check text-gold-400"></i>
-            <span>Customized Packages</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: floating service card -->
-      <div class="lg:col-span-5 reveal" style="transition-delay:120ms;">
-        <div class="relative">
-          <!-- Decorative -->
-          <div class="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-orange-500/20 blur-2xl float-soft"></div>
-          <div class="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-gold-400/20 blur-2xl float-soft-2"></div>
-
-          <div class="relative bg-white/95 backdrop-blur rounded-2xl shadow-lift border border-white/30 p-6 sm:p-7">
-            <div class="flex items-start justify-between mb-5">
-              <div>
-                <p class="eyebrow mb-3">One-Stop Travel</p>
-                <h3 class="font-display text-2xl text-navy-900" style="font-weight:600;">Plan Your Journey</h3>
-              </div>
-              <div class="h-12 w-12 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-400 text-white flex items-center justify-center text-xl shadow-lg shadow-orange-500/30">
-                <i class="fa-solid fa-globe"></i>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-3">
-              <a href="#services" class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200">
-                <div class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center">
-                  <i class="fa-solid fa-plane"></i>
-                </div>
-                <div class="text-sm">
-                  <p class="font-semibold text-navy-900">Flights</p>
-                  <p class="text-[11px] text-navy-900/60">Domestic &amp; Intl</p>
-                </div>
+        <!-- Mobile nav -->
+        <div id="mobileMenu" class="mobile-menu lg:hidden pb-4">
+          <div
+            class="flex flex-col gap-1 text-sm font-semibold text-navy-900/90 pt-2 border-t border-navy-900/10"
+          >
+            <a
+              href="#services"
+              class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5"
+              >Services</a
+            >
+            <a
+              href="#destinations"
+              class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5"
+              >Destinations</a
+            >
+            <a href="#why-us" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5"
+              >Why Us</a
+            >
+            <a href="#about" class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="px-3 py-2.5 rounded-lg hover:bg-navy-900/5"
+              >Contact</a
+            >
+            <div class="mt-2 grid grid-cols-2 gap-2">
+              <a
+                href="tel:+917988816715"
+                class="inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-full border border-navy-900/15 text-navy-900 text-xs font-semibold"
+              >
+                <i class="fa-solid fa-phone text-orange-500"></i> Call
               </a>
-              <a href="#services" class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200">
-                <div class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center">
-                  <i class="fa-solid fa-hotel"></i>
-                </div>
-                <div class="text-sm">
-                  <p class="font-semibold text-navy-900">Hotels</p>
-                  <p class="text-[11px] text-navy-900/60">Budget to luxury</p>
-                </div>
-              </a>
-              <a href="#services" class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200">
-                <div class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center">
-                  <i class="fa-solid fa-umbrella-beach"></i>
-                </div>
-                <div class="text-sm">
-                  <p class="font-semibold text-navy-900">Holidays</p>
-                  <p class="text-[11px] text-navy-900/60">Curated packages</p>
-                </div>
-              </a>
-              <a href="#services" class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200">
-                <div class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center">
-                  <i class="fa-solid fa-passport"></i>
-                </div>
-                <div class="text-sm">
-                  <p class="font-semibold text-navy-900">Visas</p>
-                  <p class="text-[11px] text-navy-900/60">Tourist assistance</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="mt-5 pt-5 border-t border-navy-900/10 flex items-center justify-between">
-              <div>
-                <p class="text-[11px] uppercase tracking-wider text-navy-900/60 font-semibold">Get a free quote</p>
-                <p class="text-sm text-navy-900 font-medium">No commitment, just honest pricing</p>
-              </div>
-              <a href="#contact" class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-orange-500 text-white hover:bg-orange-400 transition">
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Wave separator -->
-  <div class="relative">
-    <svg class="w-full block" viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:64px;">
-      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#fffdf8"/>
-    </svg>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- TRUST STRIP                                  -->
-<!-- ============================================ -->
-<section class="bg-paper py-10 sm:py-12 border-b border-navy-900/5">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-      <div class="flex items-center gap-4 reveal">
-        <div class="trust-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-        <div>
-          <p class="font-display text-lg sm:text-xl font-bold text-navy-900" style="font-weight:700;">Budget-Friendly</p>
-          <p class="text-xs text-navy-900/60">Honest, transparent prices</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-4 reveal" style="transition-delay:80ms;">
-        <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
-        <div>
-          <p class="font-display text-lg sm:text-xl font-bold text-navy-900" style="font-weight:700;">24×7 Support</p>
-          <p class="text-xs text-navy-900/60">Always here for you</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-4 reveal" style="transition-delay:160ms;">
-        <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <div>
-          <p class="font-display text-lg sm:text-xl font-bold text-navy-900" style="font-weight:700;">Safe Bookings</p>
-          <p class="text-xs text-navy-900/60">Verified partners</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-4 reveal" style="transition-delay:240ms;">
-        <div class="trust-icon"><i class="fa-solid fa-sliders"></i></div>
-        <div>
-          <p class="font-display text-lg sm:text-xl font-bold text-navy-900" style="font-weight:700;">Customized</p>
-          <p class="text-xs text-navy-900/60">Built around you</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SERVICES                                     -->
-<!-- ============================================ -->
-<section id="services" class="py-16 sm:py-24 bg-paper relative overflow-hidden">
-  <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 left-0 w-96 h-96 bg-navy-900/5 rounded-full blur-3xl"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-    <div class="text-center max-w-3xl mx-auto mb-12 reveal">
-      <span class="eyebrow">Our Services</span>
-      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3" style="font-weight:600;">
-        Every kind of booking — <span class="italic text-orange-500">in one place.</span>
-      </h2>
-      <p class="text-navy-900/70 text-base sm:text-lg">
-        Whether it's a quick weekend escape, a family vacation, a honeymoon abroad or a religious yatra — we plan, book and manage it all so you can simply enjoy the journey.
-      </p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-
-      <!-- 1 Domestic & International Tour -->
-      <div class="svc-card reveal">
-        <div class="svc-icon accent mb-4"><i class="fa-solid fa-earth-asia"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Domestic &amp; International Tours</h3>
-        <p class="text-sm text-navy-900/70">Curated tour packages across India and the world — thoughtfully designed for every traveller and every budget.</p>
-      </div>
-
-      <!-- 2 Customized -->
-      <div class="svc-card reveal" style="transition-delay:60ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-sliders"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Customized Tour Packages</h3>
-        <p class="text-sm text-navy-900/70">Tell us your dates, budget and interests — we'll build an itinerary that fits you perfectly. No cookie-cutter trips.</p>
-      </div>
-
-      <!-- 3 Group Tours -->
-      <div class="svc-card reveal" style="transition-delay:120ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-people-group"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Group Tours</h3>
-        <p class="text-sm text-navy-900/70">Fixed-departure and private group tours for families, friends, corporates and institutions — fully coordinated, end to end.</p>
-      </div>
-
-      <!-- 4 Honeymoon -->
-      <div class="svc-card reveal" style="transition-delay:180ms;">
-        <div class="svc-icon accent mb-4"><i class="fa-solid fa-heart"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Honeymoon Packages</h3>
-        <p class="text-sm text-navy-900/70">Romantic escapes to handpicked destinations — privacy, scenic stays and special touches that make your first trip together unforgettable.</p>
-      </div>
-
-      <!-- 5 Religious -->
-      <div class="svc-card reveal" style="transition-delay:240ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-place-of-worship"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Religious Yatras</h3>
-        <p class="text-sm text-navy-900/70">Comfortable pilgrimage tours — Char Dham, Vaishno Devi, Tirupati, Amarnath and more — with reliable local arrangements.</p>
-      </div>
-
-      <!-- 6 Family -->
-      <div class="svc-card reveal" style="transition-delay:300ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-people-roof"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Family &amp; Adventure Tours</h3>
-        <p class="text-sm text-navy-900/70">Multi-generation family trips and adventure getaways — from hill stations to wildlife parks and trekking trails.</p>
-      </div>
-
-      <!-- 7 Flight -->
-      <div class="svc-card reveal" style="transition-delay:60ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-plane"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Flight Bookings</h3>
-        <p class="text-sm text-navy-900/70">Best fares on domestic and international flights — with hassle-free ticketing, rescheduling support and clear documentation.</p>
-      </div>
-
-      <!-- 8 Hotel -->
-      <div class="svc-card reveal" style="transition-delay:120ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-bed"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Hotel Bookings</h3>
-        <p class="text-sm text-navy-900/70">From budget hotels to luxury resorts — we'll find the right stay in your preferred location at the right price.</p>
-      </div>
-
-      <!-- 9 Railway -->
-      <div class="svc-card reveal" style="transition-delay:180ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-train"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Railway Tickets</h3>
-        <p class="text-sm text-navy-900/70">Train ticket assistance with route planning — including tatkal, premium and regular bookings.</p>
-      </div>
-
-      <!-- 10 Bus -->
-      <div class="svc-card reveal" style="transition-delay:240ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-bus-simple"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Bus Bookings</h3>
-        <p class="text-sm text-navy-900/70">Reliable inter-city and tourist bus services with trusted operators and comfortable, pocket-friendly options.</p>
-      </div>
-
-      <!-- 11 Taxi -->
-      <div class="svc-card reveal" style="transition-delay:300ms;">
-        <div class="svc-icon mb-4"><i class="fa-solid fa-taxi"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Taxi &amp; Cab Services</h3>
-        <p class="text-sm text-navy-900/70">Local and outstation cabs — airport transfers, sightseeing, business trips and multi-city travel with safe, trusted drivers.</p>
-      </div>
-
-      <!-- 12 Passport & Visa -->
-      <div class="svc-card reveal" style="transition-delay:60ms;">
-        <div class="svc-icon accent mb-4"><i class="fa-solid fa-passport"></i></div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Passport &amp; Visa Services</h3>
-        <p class="text-sm text-navy-900/70">End-to-end guidance for passport applications and tourist visa processing — so you can travel abroad worry-free.</p>
-      </div>
-    </div>
-
-    <!-- CTA in services -->
-    <div class="mt-12 text-center reveal">
-      <p class="text-navy-900/70 mb-4 text-sm sm:text-base">Don't see what you're looking for? We probably do it.</p>
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20custom%20travel%20service." target="_blank" rel="noopener" class="btn-whatsapp">
-        <i class="fa-brands fa-whatsapp text-lg"></i>
-        <span>Ask Us on WhatsApp</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- DESTINATIONS                                 -->
-<!-- ============================================ -->
-<section id="destinations" class="py-16 sm:py-24 bg-cream relative overflow-hidden">
-  <div class="absolute inset-0 dot-grid opacity-50 pointer-events-none"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 reveal">
-      <div class="max-w-2xl">
-        <span class="eyebrow">Popular Destinations</span>
-        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3" style="font-weight:600;">
-          Where to next?
-        </h2>
-        <p class="text-navy-900/70">
-          A few traveller favourites — but we cover hundreds more, both within India and across the world. Tell us where, we'll handle the how.
-        </p>
-      </div>
-      <a href="#contact" class="hidden md:inline-flex items-center gap-2 text-orange-500 font-semibold hover:gap-3 transition-all">
-        <span>Plan a custom trip</span>
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Manali%20package." target="_blank" rel="noopener" class="dest-card reveal">
-        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80" alt="Manali, Himachal Pradesh" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1">Domestic</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Manali</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Snow, valleys &amp; mountain charm</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Goa%20package." target="_blank" rel="noopener" class="dest-card reveal" style="transition-delay:60ms;">
-        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80" alt="Goa beaches" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1">Domestic</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Goa</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Beaches, food &amp; sunsets</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Kerala%20package." target="_blank" rel="noopener" class="dest-card reveal" style="transition-delay:120ms;">
-        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80" alt="Kerala backwaters" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1">Domestic</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Kerala</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Backwaters &amp; hill country</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Kashmir%20package." target="_blank" rel="noopener" class="dest-card reveal" style="transition-delay:180ms;">
-        <img src="https://infokey-public-1.s3.ap-south-1.amazonaws.com/multi-client-website-props/kashmir-image.jpg" alt="Kashmir valley" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1">Domestic</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Kashmir</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Paradise on earth</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Dubai%20package." target="_blank" rel="noopener" class="dest-card reveal">
-        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=80" alt="Dubai skyline" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1">International</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Dubai</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Skyline, luxury &amp; desert</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Bali%20package." target="_blank" rel="noopener" class="dest-card reveal" style="transition-delay:60ms;">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80" alt="Bali rice terraces" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1">International</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Bali</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Rice terraces &amp; temples</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Thailand%20package." target="_blank" rel="noopener" class="dest-card reveal" style="transition-delay:120ms;">
-        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80" alt="Thailand islands" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1">International</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Thailand</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Islands &amp; street food</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Maldives%20package." target="_blank" rel="noopener" class="dest-card reveal" style="transition-delay:180ms;">
-        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80" alt="Maldives overwater villas" loading="lazy" />
-        <div class="dest-overlay"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white">
-          <span class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1">International</span>
-          <h3 class="font-display text-xl sm:text-2xl" style="font-weight:600;">Maldives</h3>
-          <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">Honeymoon paradise</p>
-        </div>
-      </a>
-
-    </div>
-
-    <div class="mt-8 md:hidden text-center">
-      <a href="#contact" class="inline-flex items-center gap-2 text-orange-500 font-semibold">
-        <span>Plan a custom trip</span>
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- WHY US                                       -->
-<!-- ============================================ -->
-<section id="why-us" class="py-16 sm:py-24 bg-paper relative">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-3xl mx-auto mb-12 reveal">
-      <span class="eyebrow">Why MyHoJo?</span>
-      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3" style="font-weight:600;">
-        Travel more, <span class="italic text-orange-500">worry less.</span>
-      </h2>
-      <p class="text-navy-900/70 text-base sm:text-lg">
-        We pair local expertise with global reach — designing journeys that feel effortless, safe and truly personal, without stretching your budget.
-      </p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-
-      <div class="reveal bg-gradient-to-br from-navy-900 to-navy-800 text-white p-6 rounded-2xl relative overflow-hidden">
-        <div class="absolute -top-8 -right-8 w-32 h-32 bg-orange-500/20 rounded-full blur-2xl"></div>
-        <div class="relative">
-          <div class="h-12 w-12 rounded-xl bg-gold-500 text-navy-900 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-indian-rupee-sign"></i>
-          </div>
-          <h3 class="font-display text-xl mb-2" style="font-weight:600;">Best Price Guaranteed</h3>
-          <p class="text-sm text-white/75">Honest, transparent pricing with no hidden charges. What we quote is what you pay.</p>
-        </div>
-      </div>
-
-      <div class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft" style="transition-delay:60ms;">
-        <div class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100">
-          <i class="fa-solid fa-route"></i>
-        </div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Customized for You</h3>
-        <p class="text-sm text-navy-900/70">No cookie-cutter packages. Every itinerary is shaped around your dates, budget, pace and preferences.</p>
-      </div>
-
-      <div class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft" style="transition-delay:120ms;">
-        <div class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100">
-          <i class="fa-solid fa-shield-halved"></i>
-        </div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Safe &amp; Secure Booking</h3>
-        <p class="text-sm text-navy-900/70">Verified partners, secure payments and clear documentation. Your trip — and money — are in safe hands.</p>
-      </div>
-
-      <div class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft" style="transition-delay:180ms;">
-        <div class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100">
-          <i class="fa-solid fa-headset"></i>
-        </div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">24×7 Customer Support</h3>
-        <p class="text-sm text-navy-900/70">We're just a call or WhatsApp away — before, during and after your trip. Real people, real help.</p>
-      </div>
-
-      <div class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft" style="transition-delay:240ms;">
-        <div class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100">
-          <i class="fa-solid fa-thumbs-up"></i>
-        </div>
-        <h3 class="font-display text-xl text-navy-900 mb-2" style="font-weight:600;">Hassle-Free Planning</h3>
-        <p class="text-sm text-navy-900/70">We handle the research, coordination and bookings. You just pack, smile and enjoy the holiday.</p>
-      </div>
-
-      <div class="reveal bg-gradient-to-br from-orange-500 to-orange-400 text-white p-6 rounded-2xl relative overflow-hidden" style="transition-delay:300ms;">
-        <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-gold-400/30 rounded-full blur-2xl"></div>
-        <div class="relative">
-          <div class="h-12 w-12 rounded-xl bg-white text-orange-500 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          <h3 class="font-display text-xl mb-2" style="font-weight:600;">Your Satisfaction, Our Success</h3>
-          <p class="text-sm text-white/90">Every happy traveller is our biggest reward. Read our reviews, ask our regulars — we're proud of the trips we plan.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- BILINGUAL CTA                                -->
-<!-- ============================================ -->
-<section class="py-16 sm:py-20 ribbon-cta text-white relative overflow-hidden">
-  <div class="stripe-deco hidden lg:block" style="bottom:-100px; right:-50px;"></div>
-  <div class="stripe-deco hidden lg:block" style="top:-100px; left:-50px;"></div>
-
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative reveal">
-    <span class="eyebrow eyebrow-dark">हिन्दी में बात करें?</span>
-    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl mt-5 mb-4 leading-tight" style="font-weight:600;">
-      <span class="font-hindi text-gold-400" style="font-style:italic;">रोज़ का वही बोरिंग रूटीन?</span><br>
-      Time to <span class="italic text-orange-400">escape.</span>
-    </h2>
-    <p class="font-hindi text-lg sm:text-xl text-white/85 max-w-3xl mx-auto mb-3">
-      दिल कर रहा है कहीं पहाड़ों में खो जाने का या समंदर किनारे सुकून के पल बिताने का?
-      अब बजट और प्लानिंग का टेंशन भूल जाइए — <span class="text-gold-400">MyHoJo Travels</span> है ना!
-    </p>
-    <p class="text-white/70 text-sm sm:text-base max-w-2xl mx-auto mb-8">
-      Family trip, honeymoon, religious yatra, group tour or an international holiday — हर सफर को यादगार बनाते हैं हम। बेस्ट प्राइस, 24×7 सपोर्ट, और 100% Safe Booking के साथ।
-    </p>
-
-    <div class="flex flex-wrap items-center justify-center gap-3">
-      <a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20mujhe%20ek%20trip%20plan%20karwani%20hai." target="_blank" rel="noopener" class="btn-whatsapp">
-        <i class="fa-brands fa-whatsapp text-lg"></i>
-        <span>WhatsApp Now</span>
-      </a>
-      <a href="tel:+917988816715" class="btn-primary">
-        <i class="fa-solid fa-phone-volume"></i>
-        <span>Call: 79888 16715</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- ABOUT                                        -->
-<!-- ============================================ -->
-<section id="about" class="py-16 sm:py-24 bg-paper relative">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-      <div class="reveal">
-        <span class="eyebrow">About Us</span>
-        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-5 leading-tight" style="font-weight:600;">
-          A Karnal-based travel team that treats your trip like our own.
-        </h2>
-        <div class="space-y-4 text-navy-900/75 leading-relaxed">
-          <p>
-            At <strong class="text-navy-900">MyHoJo Travels</strong> (My Holiday My Journey), we believe every trip — whether it's a long-awaited family vacation, a quiet honeymoon, a spiritual yatra or a first-time international tour — should feel memorable, comfortable, and budget-friendly.
-          </p>
-          <p>
-            We provide complete travel solutions under one roof: flights, hotels, holiday packages, visa assistance, train and bus tickets, taxi services, and on-trip support. Our goal is simple — help you explore your dream destinations without worrying about planning, pricing or paperwork.
-          </p>
-          <p>
-            With a focus on <strong class="text-navy-900">affordable pricing, personalized service, and round-the-clock support</strong>, we design travel packages that suit every budget and style. Mountains, beaches, religious destinations or international escapes — we turn your travel dreams into unforgettable memories.
-          </p>
-        </div>
-
-        <div class="mt-7 flex flex-wrap gap-2">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-50 text-orange-700 font-semibold text-xs border border-orange-100">
-            <i class="fa-solid fa-location-dot"></i> Based in Karnal, Haryana
-          </span>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-navy-50 text-navy-900 font-semibold text-xs border border-navy-100">
-            <i class="fa-solid fa-globe"></i> Domestic + International Expertise
-          </span>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold-500/15 text-navy-900 font-semibold text-xs border border-gold-500/30">
-            <i class="fa-solid fa-star"></i> Sapno Ki Yatra, Budget Ke Sath
-          </span>
-        </div>
-      </div>
-
-      <div class="reveal" style="transition-delay:120ms;">
-        <div class="grid grid-cols-2 gap-4">
-          <div class="relative rounded-2xl overflow-hidden shadow-soft aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=700&q=80" alt="Travel" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="space-y-4 mt-8">
-            <div class="relative rounded-2xl overflow-hidden shadow-soft aspect-square">
-              <img src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?auto=format&fit=crop&w=700&q=80" alt="Family travel" class="w-full h-full object-cover" loading="lazy" />
-            </div>
-            <div class="bg-navy-900 text-white rounded-2xl p-5 shadow-soft">
-              <p class="font-display text-3xl text-gold-400" style="font-weight:700;">100%</p>
-              <p class="text-sm text-white/80 mt-1">Personalized travel planning, every single trip.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Values pills -->
-        <div class="mt-6 bg-cream border border-navy-900/8 rounded-2xl p-5">
-          <p class="font-display text-base text-navy-900 mb-3 font-semibold" style="font-weight:600;">What We Stand For</p>
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <div class="flex items-start gap-2">
-              <i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i>
-              <div>
-                <p class="font-semibold text-navy-900">Budget-Friendly</p>
-                <p class="text-xs text-navy-900/60">Honest, transparent pricing</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2">
-              <i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i>
-              <div>
-                <p class="font-semibold text-navy-900">Personalized</p>
-                <p class="text-xs text-navy-900/60">Shaped around you</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2">
-              <i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i>
-              <div>
-                <p class="font-semibold text-navy-900">Secure</p>
-                <p class="text-xs text-navy-900/60">Verified suppliers</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2">
-              <i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i>
-              <div>
-                <p class="font-semibold text-navy-900">24×7 Help</p>
-                <p class="text-xs text-navy-900/60">Always reachable</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- CONTACT                                      -->
-<!-- ============================================ -->
-<section id="contact" class="py-16 sm:py-24 bg-cream relative overflow-hidden">
-  <div class="absolute inset-0 dot-grid opacity-40 pointer-events-none"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-    <div class="text-center max-w-3xl mx-auto mb-12 reveal">
-      <span class="eyebrow">Get In Touch</span>
-      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3" style="font-weight:600;">
-        Let's plan your <span class="italic text-orange-500">next journey.</span>
-      </h2>
-      <p class="text-navy-900/70 text-base sm:text-lg">
-        Share a few details and we'll get back with the best routes, stays and packages — usually within a few hours.
-      </p>
-    </div>
-
-    <div class="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
-
-      <!-- Contact info -->
-      <div class="lg:col-span-2 space-y-5 reveal">
-        <div class="bg-white border border-navy-900/8 rounded-2xl p-6 shadow-soft">
-          <h3 class="font-display text-xl text-navy-900 mb-5" style="font-weight:600;">Reach Us</h3>
-          <ul class="space-y-4 text-sm">
-            <li class="flex items-start gap-3">
-              <div class="h-10 w-10 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div>
-                <p class="font-semibold text-navy-900">Address</p>
-                <p class="text-navy-900/70">Karnal, Haryana, India</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="h-10 w-10 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <div>
-                <p class="font-semibold text-navy-900">Phone</p>
-                <p class="text-navy-900/70">
-                  <a href="tel:+917988816715" class="hover:text-orange-500">+91 79888 16715</a><br>
-                  <a href="tel:+919817816715" class="hover:text-orange-500">+91 98178 16715</a>
-                </p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="h-10 w-10 rounded-xl bg-[#25d366]/10 text-[#25d366] flex items-center justify-center flex-shrink-0">
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
-              <div>
-                <p class="font-semibold text-navy-900">WhatsApp</p>
-                <p class="text-navy-900/70">
-                  <a href="https://wa.me/917988816715" target="_blank" rel="noopener" class="hover:text-orange-500">+91 79888 16715</a>
-                </p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="h-10 w-10 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-              <div>
-                <p class="font-semibold text-navy-900">Email</p>
-                <p class="text-navy-900/70 break-all">
-                  <a href="mailto:myholidaymyjourney54@gmail.com" class="hover:text-orange-500">myholidaymyjourney54@gmail.com</a>
-                </p>
-              </div>
-            </li>
-          </ul>
-
-          <div class="mt-6 pt-5 border-t border-navy-900/8">
-            <p class="font-semibold text-navy-900 mb-3 text-sm">Follow us</p>
-            <div class="flex items-center gap-3">
-              <a href="https://www.facebook.com/share/1CrZNMBKw1/" target="_blank" rel="noopener" class="h-10 w-10 rounded-full bg-[#1877f2] text-white flex items-center justify-center hover:scale-110 transition" aria-label="Facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/myhojotravel?igsh=MXhxY25tN3F1MWhw" target="_blank" rel="noopener" class="h-10 w-10 rounded-full ig-gradient text-white flex items-center justify-center hover:scale-110 transition" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://wa.me/917988816715" target="_blank" rel="noopener" class="h-10 w-10 rounded-full bg-[#25d366] text-white flex items-center justify-center hover:scale-110 transition" aria-label="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-navy-900 text-white rounded-2xl p-6 relative overflow-hidden">
-          <div class="absolute -top-6 -right-6 w-24 h-24 bg-orange-500/30 rounded-full blur-2xl"></div>
-          <div class="relative">
-            <p class="text-xs uppercase tracking-widest text-gold-400 font-bold mb-2">Prefer to talk now?</p>
-            <p class="font-display text-2xl mb-4" style="font-weight:600;">We're just one click away.</p>
-            <div class="flex gap-2">
-              <a href="tel:+917988816715" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-white text-navy-900 text-sm font-bold hover:bg-gold-400 transition">
-                <i class="fa-solid fa-phone"></i> Call
-              </a>
-              <a href="https://wa.me/917988816715" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-[#25d366] text-white text-sm font-bold hover:bg-[#1da851] transition">
+              <a
+                href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip."
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-full bg-[#25d366] text-white text-xs font-semibold"
+              >
                 <i class="fa-brands fa-whatsapp"></i> WhatsApp
               </a>
             </div>
           </div>
         </div>
       </div>
+    </header>
 
-      <!-- Form -->
-      <div class="lg:col-span-3 reveal" style="transition-delay:120ms;">
-        <div class="bg-white border border-navy-900/8 rounded-2xl p-6 sm:p-8 shadow-soft">
-          <div class="flex items-start justify-between mb-6">
-            <div>
-              <h3 class="font-display text-2xl text-navy-900" style="font-weight:600;">Share your travel plans</h3>
-              <p class="text-sm text-navy-900/60 mt-1">Fill this once. We'll WhatsApp you back with a personalised quote.</p>
+    <main id="top">
+      <!-- ============================================ -->
+      <!-- HERO                                         -->
+      <!-- ============================================ -->
+      <section class="hero-wrap text-white">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-noise"></div>
+
+        <!-- Flying plane SVG -->
+        <div
+          class="absolute top-[12%] left-0 right-0 pointer-events-none hidden sm:block"
+        >
+          <svg
+            width="100%"
+            height="80"
+            viewBox="0 0 1200 80"
+            preserveAspectRatio="none"
+          >
+            <g class="plane-fly">
+              <path
+                class="plane-trail"
+                d="M0 40 Q40 28 100 40"
+                stroke="rgba(255,194,32,0.55)"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <g transform="translate(100 40)">
+                <path
+                  d="M-22 0 L18 -7 L24 -2 L18 0 L24 2 L18 7 Z"
+                  fill="#ffc220"
+                />
+                <path d="M-2 -7 L8 -14 L11 -12 L0 -4 Z" fill="#ffc220" />
+                <path d="M-2 7 L8 14 L11 12 L0 4 Z" fill="#ffc220" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Decorative shapes -->
+        <div
+          class="stripe-deco hidden md:block"
+          style="top: 18%; right: -80px; opacity: 0.5"
+        ></div>
+
+        <div
+          class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32"
+        >
+          <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <!-- Left: text -->
+            <div class="lg:col-span-7 reveal">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-[11px] sm:text-xs font-semibold tracking-widest uppercase text-gold-400"
+              >
+                <i class="fa-solid fa-location-dot text-orange-400"></i>
+                Karnal, Haryana · Trusted Travel Partner
+              </span>
+
+              <h1
+                class="font-display text-4xl sm:text-5xl lg:text-7xl leading-[1.02] mt-5 mb-4"
+                style="font-weight: 600"
+              >
+                My Holiday,<br />
+                <span class="italic text-gold-400" style="font-weight: 500"
+                  >My Journey</span
+                >
+                —<br />
+                <span class="text-white" style="font-weight: 600"
+                  >crafted for you.</span
+                >
+              </h1>
+
+              <p
+                class="font-hindi text-xl sm:text-2xl text-orange-400 mb-5"
+                style="font-style: italic"
+              >
+                सपनों की यात्रा, आपके बजट में। ✨
+              </p>
+
+              <p
+                class="text-white/80 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl"
+              >
+                From the hills of Manali to the beaches of Bali — MyHoJo Travels
+                handles every detail of your trip. Flights, hotels, visas,
+                packages, transfers — all under one roof, at honest,
+                budget-friendly prices.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-3 mb-8">
+                <a
+                  href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20plan%20a%20trip.%20Please%20share%20details."
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-whatsapp"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Chat on WhatsApp</span>
+                </a>
+                <a href="tel:+917988816715" class="btn-primary">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <span>Call: 79888 16715</span>
+                </a>
+                <a href="#services" class="btn-ghost">
+                  <span>Explore Services</span>
+                  <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+              </div>
+
+              <!-- Trust pills -->
+              <div
+                class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm text-white/75"
+              >
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-gold-400"></i>
+                  <span>Best Price Guaranteed</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-gold-400"></i>
+                  <span>24×7 Support</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-gold-400"></i>
+                  <span>No Hidden Charges</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-gold-400"></i>
+                  <span>Customized Packages</span>
+                </div>
+              </div>
             </div>
-            <div class="hidden sm:flex h-12 w-12 rounded-2xl bg-orange-500 text-white items-center justify-center">
-              <i class="fa-solid fa-paper-plane"></i>
+
+            <!-- Right: floating service card -->
+            <div class="lg:col-span-5 reveal" style="transition-delay: 120ms">
+              <div class="relative">
+                <!-- Decorative -->
+                <div
+                  class="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-orange-500/20 blur-2xl float-soft"
+                ></div>
+                <div
+                  class="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-gold-400/20 blur-2xl float-soft-2"
+                ></div>
+
+                <div
+                  class="relative bg-white/95 backdrop-blur rounded-2xl shadow-lift border border-white/30 p-6 sm:p-7"
+                >
+                  <div class="flex items-start justify-between mb-5">
+                    <div>
+                      <p class="eyebrow mb-3">One-Stop Travel</p>
+                      <h3
+                        class="font-display text-2xl text-navy-900"
+                        style="font-weight: 600"
+                      >
+                        Plan Your Journey
+                      </h3>
+                    </div>
+                    <div
+                      class="h-12 w-12 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-400 text-white flex items-center justify-center text-xl shadow-lg shadow-orange-500/30"
+                    >
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-3">
+                    <a
+                      href="#services"
+                      class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200"
+                    >
+                      <div
+                        class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-plane"></i>
+                      </div>
+                      <div class="text-sm">
+                        <p class="font-semibold text-navy-900">Flights</p>
+                        <p class="text-[11px] text-navy-900/60">
+                          Domestic &amp; Intl
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="#services"
+                      class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200"
+                    >
+                      <div
+                        class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-hotel"></i>
+                      </div>
+                      <div class="text-sm">
+                        <p class="font-semibold text-navy-900">Hotels</p>
+                        <p class="text-[11px] text-navy-900/60">
+                          Budget to luxury
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="#services"
+                      class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200"
+                    >
+                      <div
+                        class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                      </div>
+                      <div class="text-sm">
+                        <p class="font-semibold text-navy-900">Holidays</p>
+                        <p class="text-[11px] text-navy-900/60">
+                          Curated packages
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="#services"
+                      class="group flex items-center gap-3 p-3 rounded-xl bg-navy-50/50 hover:bg-orange-50 transition border border-transparent hover:border-orange-200"
+                    >
+                      <div
+                        class="h-9 w-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-passport"></i>
+                      </div>
+                      <div class="text-sm">
+                        <p class="font-semibold text-navy-900">Visas</p>
+                        <p class="text-[11px] text-navy-900/60">
+                          Tourist assistance
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div
+                    class="mt-5 pt-5 border-t border-navy-900/10 flex items-center justify-between"
+                  >
+                    <div>
+                      <p
+                        class="text-[11px] uppercase tracking-wider text-navy-900/60 font-semibold"
+                      >
+                        Get a free quote
+                      </p>
+                      <p class="text-sm text-navy-900 font-medium">
+                        No commitment, just honest pricing
+                      </p>
+                    </div>
+                    <a
+                      href="#contact"
+                      class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-orange-500 text-white hover:bg-orange-400 transition"
+                    >
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
 
-          <form id="contactForm" class="space-y-5">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label for="name" class="input-label">Full Name <span class="text-orange-500">*</span></label>
-                <input id="name" name="name" type="text" required class="input-field" placeholder="Your name" />
+        <!-- Wave separator -->
+        <div class="relative">
+          <svg
+            class="w-full block"
+            viewBox="0 0 1440 80"
+            preserveAspectRatio="none"
+            style="height: 64px"
+          >
+            <path
+              d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
+              fill="#fffdf8"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- TRUST STRIP                                  -->
+      <!-- ============================================ -->
+      <section class="bg-paper py-10 sm:py-12 border-b border-navy-900/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+            <div class="flex items-center gap-4 reveal">
+              <div class="trust-icon">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
               </div>
               <div>
-                <label for="phone" class="input-label">Phone <span class="text-orange-500">*</span></label>
-                <input id="phone" name="phone" type="tel" required pattern="[0-9+\s]{7,15}" class="input-field" placeholder="+91 9XXXXXXXXX" />
+                <p
+                  class="font-display text-lg sm:text-xl font-bold text-navy-900"
+                  style="font-weight: 700"
+                >
+                  Budget-Friendly
+                </p>
+                <p class="text-xs text-navy-900/60">
+                  Honest, transparent prices
+                </p>
               </div>
             </div>
-
-            <div class="grid sm:grid-cols-2 gap-4">
+            <div
+              class="flex items-center gap-4 reveal"
+              style="transition-delay: 80ms"
+            >
+              <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
               <div>
-                <label for="email" class="input-label">Email <span class="text-navy-900/40 font-normal normal-case">(optional)</span></label>
-                <input id="email" name="email" type="email" class="input-field" placeholder="you@example.com" />
-              </div>
-              <div>
-                <label for="service" class="input-label">Interested In</label>
-                <select id="service" name="service" class="input-field">
-                  <option value="">Select a service</option>
-                  <option>Domestic Tour Package</option>
-                  <option>International Tour Package</option>
-                  <option>Customized Tour Package</option>
-                  <option>Honeymoon Package</option>
-                  <option>Religious / Spiritual Tour</option>
-                  <option>Group Tour</option>
-                  <option>Flight Booking</option>
-                  <option>Hotel Booking</option>
-                  <option>Train / Bus / Cab Booking</option>
-                  <option>Passport / Visa Assistance</option>
-                  <option>Other</option>
-                </select>
+                <p
+                  class="font-display text-lg sm:text-xl font-bold text-navy-900"
+                  style="font-weight: 700"
+                >
+                  24×7 Support
+                </p>
+                <p class="text-xs text-navy-900/60">Always here for you</p>
               </div>
             </div>
-
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label for="destination" class="input-label">Destination</label>
-                <input id="destination" name="destination" type="text" class="input-field" placeholder="e.g. Manali, Goa, Dubai" />
+            <div
+              class="flex items-center gap-4 reveal"
+              style="transition-delay: 160ms"
+            >
+              <div class="trust-icon">
+                <i class="fa-solid fa-shield-halved"></i>
               </div>
               <div>
-                <label for="travelDate" class="input-label">Travel Date</label>
-                <input id="travelDate" name="travelDate" type="text" class="input-field" placeholder="Approx. dates / month" />
+                <p
+                  class="font-display text-lg sm:text-xl font-bold text-navy-900"
+                  style="font-weight: 700"
+                >
+                  Safe Bookings
+                </p>
+                <p class="text-xs text-navy-900/60">Verified partners</p>
               </div>
             </div>
-
-            <div>
-              <label for="message" class="input-label">Trip Details <span class="text-orange-500">*</span></label>
-              <textarea id="message" name="message" rows="4" required class="input-field" placeholder="Share your travel dates, number of travellers, budget, and any special requirements."></textarea>
+            <div
+              class="flex items-center gap-4 reveal"
+              style="transition-delay: 240ms"
+            >
+              <div class="trust-icon"><i class="fa-solid fa-sliders"></i></div>
+              <div>
+                <p
+                  class="font-display text-lg sm:text-xl font-bold text-navy-900"
+                  style="font-weight: 700"
+                >
+                  Customized
+                </p>
+                <p class="text-xs text-navy-900/60">Built around you</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <p class="text-[11px] text-navy-900/55">
-              Tip: Hit submit and we'll open WhatsApp with your enquiry pre-filled — just press send. By submitting, you authorize MyHoJo Travels to contact you regarding your enquiry.
+      <!-- ============================================ -->
+      <!-- SERVICES                                     -->
+      <!-- ============================================ -->
+      <section
+        id="services"
+        class="py-16 sm:py-24 bg-paper relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-navy-900/5 rounded-full blur-3xl"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+            <span class="eyebrow">Our Services</span>
+            <h2
+              class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3"
+              style="font-weight: 600"
+            >
+              Every kind of booking —
+              <span class="italic text-orange-500">in one place.</span>
+            </h2>
+            <p class="text-navy-900/70 text-base sm:text-lg">
+              Whether it's a quick weekend escape, a family vacation, a
+              honeymoon abroad or a religious yatra — we plan, book and manage
+              it all so you can simply enjoy the journey.
             </p>
-
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-400 shadow-lg shadow-orange-500/30 transition">
-              <i class="fa-brands fa-whatsapp text-lg"></i>
-              <span>Send Enquiry via WhatsApp</span>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ============================================ -->
-<!-- FOOTER                                       -->
-<!-- ============================================ -->
-<footer class="bg-navy-950 text-white pt-14 pb-6 relative overflow-hidden">
-  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-gold-500 to-orange-500"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-12 gap-8 mb-10">
-      <div class="md:col-span-5">
-        <a href="#top" class="flex items-center gap-3 mb-4">
-		  <img src="https://infokey-public-1.s3.ap-south-1.amazonaws.com/multi-client-website-props/hojo-travels-logo.png" alt="Hojo Travels" loading="lazy" style="width: 50px;" />
-          <div>
-            <p class="font-display text-2xl" style="font-weight:700;">My<span class="text-orange-500">Ho</span>Jo <span class="font-normal text-white/80">Travels</span></p>
-            <p class="text-xs text-gold-400 tracking-widest uppercase">My Holiday · My Journey</p>
           </div>
-        </a>
-        <p class="text-sm text-white/70 leading-relaxed max-w-md mb-4">
-          Complete travel planning from Karnal, Haryana — domestic and international tours, holidays, tickets, visas and on-trip assistance, all tailored to your budget.
-        </p>
-        <p class="font-hindi italic text-gold-400">
-          सपनों की यात्रा, आपके बजट में।
-        </p>
-      </div>
 
-      <div class="md:col-span-3">
-        <h4 class="font-display text-base text-white mb-4" style="font-weight:600;">Quick Links</h4>
-        <ul class="space-y-2 text-sm text-white/70">
-          <li><a href="#services" class="hover:text-orange-400">Services</a></li>
-          <li><a href="#destinations" class="hover:text-orange-400">Destinations</a></li>
-          <li><a href="#why-us" class="hover:text-orange-400">Why Choose Us</a></li>
-          <li><a href="#about" class="hover:text-orange-400">About Us</a></li>
-          <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="md:col-span-4">
-        <h4 class="font-display text-base text-white mb-4" style="font-weight:600;">Get In Touch</h4>
-        <ul class="space-y-3 text-sm text-white/70">
-          <li class="flex items-start gap-3">
-            <i class="fa-solid fa-location-dot text-orange-400 mt-1"></i>
-            <span>Karnal, Haryana, India</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <i class="fa-solid fa-phone text-orange-400 mt-1"></i>
-            <div>
-              <a href="tel:+917988816715" class="block hover:text-orange-400">+91 79888 16715</a>
-              <a href="tel:+919817816715" class="block hover:text-orange-400">+91 98178 16715</a>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+            <!-- 1 Domestic & International Tour -->
+            <div class="svc-card reveal">
+              <div class="svc-icon accent mb-4">
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Domestic &amp; International Tours
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Curated tour packages across India and the world — thoughtfully
+                designed for every traveller and every budget.
+              </p>
             </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <i class="fa-solid fa-envelope text-orange-400 mt-1"></i>
-            <a href="mailto:myholidaymyjourney54@gmail.com" class="hover:text-orange-400 break-all">myholidaymyjourney54@gmail.com</a>
-          </li>
-        </ul>
-        <div class="mt-5 flex items-center gap-3">
-          <a href="https://www.facebook.com/share/1CrZNMBKw1/" target="_blank" rel="noopener" class="h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-[#1877f2] transition" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f text-sm"></i>
-          </a>
-          <a href="https://www.instagram.com/myhojotravel?igsh=MXhxY25tN3F1MWhw" target="_blank" rel="noopener" class="h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-gradient-to-tr hover:from-pink-500 hover:to-orange-500 transition" aria-label="Instagram">
-            <i class="fa-brands fa-instagram text-sm"></i>
-          </a>
-          <a href="https://wa.me/917988816715" target="_blank" rel="noopener" class="h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-[#25d366] transition" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp text-sm"></i>
-          </a>
+
+            <!-- 2 Customized -->
+            <div class="svc-card reveal" style="transition-delay: 60ms">
+              <div class="svc-icon mb-4">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Customized Tour Packages
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Tell us your dates, budget and interests — we'll build an
+                itinerary that fits you perfectly. No cookie-cutter trips.
+              </p>
+            </div>
+
+            <!-- 3 Group Tours -->
+            <div class="svc-card reveal" style="transition-delay: 120ms">
+              <div class="svc-icon mb-4">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Group Tours
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Fixed-departure and private group tours for families, friends,
+                corporates and institutions — fully coordinated, end to end.
+              </p>
+            </div>
+
+            <!-- 4 Honeymoon -->
+            <div class="svc-card reveal" style="transition-delay: 180ms">
+              <div class="svc-icon accent mb-4">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Honeymoon Packages
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Romantic escapes to handpicked destinations — privacy, scenic
+                stays and special touches that make your first trip together
+                unforgettable.
+              </p>
+            </div>
+
+            <!-- 5 Religious -->
+            <div class="svc-card reveal" style="transition-delay: 240ms">
+              <div class="svc-icon mb-4">
+                <i class="fa-solid fa-place-of-worship"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Religious Yatras
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Comfortable pilgrimage tours — Char Dham, Vaishno Devi,
+                Tirupati, Amarnath and more — with reliable local arrangements.
+              </p>
+            </div>
+
+            <!-- 6 Family -->
+            <div class="svc-card reveal" style="transition-delay: 300ms">
+              <div class="svc-icon mb-4">
+                <i class="fa-solid fa-people-roof"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Family &amp; Adventure Tours
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Multi-generation family trips and adventure getaways — from hill
+                stations to wildlife parks and trekking trails.
+              </p>
+            </div>
+
+            <!-- 7 Flight -->
+            <div class="svc-card reveal" style="transition-delay: 60ms">
+              <div class="svc-icon mb-4"><i class="fa-solid fa-plane"></i></div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Flight Bookings
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Best fares on domestic and international flights — with
+                hassle-free ticketing, rescheduling support and clear
+                documentation.
+              </p>
+            </div>
+
+            <!-- 8 Hotel -->
+            <div class="svc-card reveal" style="transition-delay: 120ms">
+              <div class="svc-icon mb-4"><i class="fa-solid fa-bed"></i></div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Hotel Bookings
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                From budget hotels to luxury resorts — we'll find the right stay
+                in your preferred location at the right price.
+              </p>
+            </div>
+
+            <!-- 9 Railway -->
+            <div class="svc-card reveal" style="transition-delay: 180ms">
+              <div class="svc-icon mb-4"><i class="fa-solid fa-train"></i></div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Railway Tickets
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Train ticket assistance with route planning — including tatkal,
+                premium and regular bookings.
+              </p>
+            </div>
+
+            <!-- 10 Bus -->
+            <div class="svc-card reveal" style="transition-delay: 240ms">
+              <div class="svc-icon mb-4">
+                <i class="fa-solid fa-bus-simple"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Bus Bookings
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Reliable inter-city and tourist bus services with trusted
+                operators and comfortable, pocket-friendly options.
+              </p>
+            </div>
+
+            <!-- 11 Taxi -->
+            <div class="svc-card reveal" style="transition-delay: 300ms">
+              <div class="svc-icon mb-4"><i class="fa-solid fa-taxi"></i></div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Taxi &amp; Cab Services
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Local and outstation cabs — airport transfers, sightseeing,
+                business trips and multi-city travel with safe, trusted drivers.
+              </p>
+            </div>
+
+            <!-- 12 Passport & Visa -->
+            <div class="svc-card reveal" style="transition-delay: 60ms">
+              <div class="svc-icon accent mb-4">
+                <i class="fa-solid fa-passport"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Passport &amp; Visa Services
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                End-to-end guidance for passport applications and tourist visa
+                processing — so you can travel abroad worry-free.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA in services -->
+          <div class="mt-12 text-center reveal">
+            <p class="text-navy-900/70 mb-4 text-sm sm:text-base">
+              Don't see what you're looking for? We probably do it.
+            </p>
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20custom%20travel%20service."
+              target="_blank"
+              rel="noopener"
+              class="btn-whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Ask Us on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- DESTINATIONS                                 -->
+      <!-- ============================================ -->
+      <section
+        id="destinations"
+        class="py-16 sm:py-24 bg-cream relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 dot-grid opacity-50 pointer-events-none"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 reveal"
+          >
+            <div class="max-w-2xl">
+              <span class="eyebrow">Popular Destinations</span>
+              <h2
+                class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3"
+                style="font-weight: 600"
+              >
+                Where to next?
+              </h2>
+              <p class="text-navy-900/70">
+                A few traveller favourites — but we cover hundreds more, both
+                within India and across the world. Tell us where, we'll handle
+                the how.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              class="hidden md:inline-flex items-center gap-2 text-orange-500 font-semibold hover:gap-3 transition-all"
+            >
+              <span>Plan a custom trip</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Manali%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80"
+                alt="Manali, Himachal Pradesh"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1"
+                  >Domestic</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Manali
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Snow, valleys &amp; mountain charm
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Goa%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+              style="transition-delay: 60ms"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80"
+                alt="Goa beaches"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1"
+                  >Domestic</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Goa
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Beaches, food &amp; sunsets
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Kerala%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+              style="transition-delay: 120ms"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80"
+                alt="Kerala backwaters"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1"
+                  >Domestic</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Kerala
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Backwaters &amp; hill country
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Kashmir%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+              style="transition-delay: 180ms"
+            >
+              <img
+                src="https://infokey-public-1.s3.ap-south-1.amazonaws.com/n8n-websites/myhojotravels/props/kashmir-image.jpg"
+                alt="Kashmir valley"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-gold-400 font-semibold mb-1"
+                  >Domestic</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Kashmir
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Paradise on earth
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Dubai%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=80"
+                alt="Dubai skyline"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1"
+                  >International</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Dubai
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Skyline, luxury &amp; desert
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Bali%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+              style="transition-delay: 60ms"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                alt="Bali rice terraces"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1"
+                  >International</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Bali
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Rice terraces &amp; temples
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Thailand%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+              style="transition-delay: 120ms"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+                alt="Thailand islands"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1"
+                  >International</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Thailand
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Islands &amp; street food
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27m%20interested%20in%20a%20Maldives%20package."
+              target="_blank"
+              rel="noopener"
+              class="dest-card reveal"
+              style="transition-delay: 180ms"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80"
+                alt="Maldives overwater villas"
+                loading="lazy"
+              />
+              <div class="dest-overlay"></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 sm:p-5 text-white"
+              >
+                <span
+                  class="inline-block text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-1"
+                  >International</span
+                >
+                <h3
+                  class="font-display text-xl sm:text-2xl"
+                  style="font-weight: 600"
+                >
+                  Maldives
+                </h3>
+                <p class="text-[11px] sm:text-xs text-white/80 mt-0.5">
+                  Honeymoon paradise
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mt-8 md:hidden text-center">
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 text-orange-500 font-semibold"
+            >
+              <span>Plan a custom trip</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- WHY US                                       -->
+      <!-- ============================================ -->
+      <section id="why-us" class="py-16 sm:py-24 bg-paper relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+            <span class="eyebrow">Why MyHoJo?</span>
+            <h2
+              class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3"
+              style="font-weight: 600"
+            >
+              Travel more,
+              <span class="italic text-orange-500">worry less.</span>
+            </h2>
+            <p class="text-navy-900/70 text-base sm:text-lg">
+              We pair local expertise with global reach — designing journeys
+              that feel effortless, safe and truly personal, without stretching
+              your budget.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+            <div
+              class="reveal bg-gradient-to-br from-navy-900 to-navy-800 text-white p-6 rounded-2xl relative overflow-hidden"
+            >
+              <div
+                class="absolute -top-8 -right-8 w-32 h-32 bg-orange-500/20 rounded-full blur-2xl"
+              ></div>
+              <div class="relative">
+                <div
+                  class="h-12 w-12 rounded-xl bg-gold-500 text-navy-900 flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <h3 class="font-display text-xl mb-2" style="font-weight: 600">
+                  Best Price Guaranteed
+                </h3>
+                <p class="text-sm text-white/75">
+                  Honest, transparent pricing with no hidden charges. What we
+                  quote is what you pay.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft"
+              style="transition-delay: 60ms"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100"
+              >
+                <i class="fa-solid fa-route"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Customized for You
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                No cookie-cutter packages. Every itinerary is shaped around your
+                dates, budget, pace and preferences.
+              </p>
+            </div>
+
+            <div
+              class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft"
+              style="transition-delay: 120ms"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100"
+              >
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Safe &amp; Secure Booking
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                Verified partners, secure payments and clear documentation. Your
+                trip — and money — are in safe hands.
+              </p>
+            </div>
+
+            <div
+              class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft"
+              style="transition-delay: 180ms"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100"
+              >
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                24×7 Customer Support
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                We're just a call or WhatsApp away — before, during and after
+                your trip. Real people, real help.
+              </p>
+            </div>
+
+            <div
+              class="reveal bg-white border border-navy-900/8 p-6 rounded-2xl shadow-soft"
+              style="transition-delay: 240ms"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4 border border-orange-100"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+              </div>
+              <h3
+                class="font-display text-xl text-navy-900 mb-2"
+                style="font-weight: 600"
+              >
+                Hassle-Free Planning
+              </h3>
+              <p class="text-sm text-navy-900/70">
+                We handle the research, coordination and bookings. You just
+                pack, smile and enjoy the holiday.
+              </p>
+            </div>
+
+            <div
+              class="reveal bg-gradient-to-br from-orange-500 to-orange-400 text-white p-6 rounded-2xl relative overflow-hidden"
+              style="transition-delay: 300ms"
+            >
+              <div
+                class="absolute -bottom-8 -left-8 w-32 h-32 bg-gold-400/30 rounded-full blur-2xl"
+              ></div>
+              <div class="relative">
+                <div
+                  class="h-12 w-12 rounded-xl bg-white text-orange-500 flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3 class="font-display text-xl mb-2" style="font-weight: 600">
+                  Your Satisfaction, Our Success
+                </h3>
+                <p class="text-sm text-white/90">
+                  Every happy traveller is our biggest reward. Read our reviews,
+                  ask our regulars — we're proud of the trips we plan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- BILINGUAL CTA                                -->
+      <!-- ============================================ -->
+      <section
+        class="py-16 sm:py-20 ribbon-cta text-white relative overflow-hidden"
+      >
+        <div
+          class="stripe-deco hidden lg:block"
+          style="bottom: -100px; right: -50px"
+        ></div>
+        <div
+          class="stripe-deco hidden lg:block"
+          style="top: -100px; left: -50px"
+        ></div>
+
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative reveal"
+        >
+          <span class="eyebrow eyebrow-dark">हिन्दी में बात करें?</span>
+          <h2
+            class="font-display text-3xl sm:text-4xl lg:text-5xl mt-5 mb-4 leading-tight"
+            style="font-weight: 600"
+          >
+            <span class="font-hindi text-gold-400" style="font-style: italic"
+              >रोज़ का वही बोरिंग रूटीन?</span
+            ><br />
+            Time to <span class="italic text-orange-400">escape.</span>
+          </h2>
+          <p
+            class="font-hindi text-lg sm:text-xl text-white/85 max-w-3xl mx-auto mb-3"
+          >
+            दिल कर रहा है कहीं पहाड़ों में खो जाने का या समंदर किनारे सुकून के
+            पल बिताने का? अब बजट और प्लानिंग का टेंशन भूल जाइए —
+            <span class="text-gold-400">MyHoJo Travels</span> है ना!
+          </p>
+          <p class="text-white/70 text-sm sm:text-base max-w-2xl mx-auto mb-8">
+            Family trip, honeymoon, religious yatra, group tour or an
+            international holiday — हर सफर को यादगार बनाते हैं हम। बेस्ट प्राइस,
+            24×7 सपोर्ट, और 100% Safe Booking के साथ।
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20mujhe%20ek%20trip%20plan%20karwani%20hai."
+              target="_blank"
+              rel="noopener"
+              class="btn-whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>WhatsApp Now</span>
+            </a>
+            <a href="tel:+917988816715" class="btn-primary">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>Call: 79888 16715</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- ABOUT                                        -->
+      <!-- ============================================ -->
+      <section id="about" class="py-16 sm:py-24 bg-paper relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div class="reveal">
+              <span class="eyebrow">About Us</span>
+              <h2
+                class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-5 leading-tight"
+                style="font-weight: 600"
+              >
+                A Karnal-based travel team that treats your trip like our own.
+              </h2>
+              <div class="space-y-4 text-navy-900/75 leading-relaxed">
+                <p>
+                  At <strong class="text-navy-900">MyHoJo Travels</strong> (My
+                  Holiday My Journey), we believe every trip — whether it's a
+                  long-awaited family vacation, a quiet honeymoon, a spiritual
+                  yatra or a first-time international tour — should feel
+                  memorable, comfortable, and budget-friendly.
+                </p>
+                <p>
+                  We provide complete travel solutions under one roof: flights,
+                  hotels, holiday packages, visa assistance, train and bus
+                  tickets, taxi services, and on-trip support. Our goal is
+                  simple — help you explore your dream destinations without
+                  worrying about planning, pricing or paperwork.
+                </p>
+                <p>
+                  With a focus on
+                  <strong class="text-navy-900"
+                    >affordable pricing, personalized service, and
+                    round-the-clock support</strong
+                  >, we design travel packages that suit every budget and style.
+                  Mountains, beaches, religious destinations or international
+                  escapes — we turn your travel dreams into unforgettable
+                  memories.
+                </p>
+              </div>
+
+              <div class="mt-7 flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-50 text-orange-700 font-semibold text-xs border border-orange-100"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Based in Karnal,
+                  Haryana
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-navy-50 text-navy-900 font-semibold text-xs border border-navy-100"
+                >
+                  <i class="fa-solid fa-globe"></i> Domestic + International
+                  Expertise
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold-500/15 text-navy-900 font-semibold text-xs border border-gold-500/30"
+                >
+                  <i class="fa-solid fa-star"></i> Sapno Ki Yatra, Budget Ke
+                  Sath
+                </span>
+              </div>
+            </div>
+
+            <div class="reveal" style="transition-delay: 120ms">
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="relative rounded-2xl overflow-hidden shadow-soft aspect-[3/4]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=700&q=80"
+                    alt="Travel"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="space-y-4 mt-8">
+                  <div
+                    class="relative rounded-2xl overflow-hidden shadow-soft aspect-square"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?auto=format&fit=crop&w=700&q=80"
+                      alt="Family travel"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div
+                    class="bg-navy-900 text-white rounded-2xl p-5 shadow-soft"
+                  >
+                    <p
+                      class="font-display text-3xl text-gold-400"
+                      style="font-weight: 700"
+                    >
+                      100%
+                    </p>
+                    <p class="text-sm text-white/80 mt-1">
+                      Personalized travel planning, every single trip.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Values pills -->
+              <div
+                class="mt-6 bg-cream border border-navy-900/8 rounded-2xl p-5"
+              >
+                <p
+                  class="font-display text-base text-navy-900 mb-3 font-semibold"
+                  style="font-weight: 600"
+                >
+                  What We Stand For
+                </p>
+                <div class="grid grid-cols-2 gap-3 text-sm">
+                  <div class="flex items-start gap-2">
+                    <i
+                      class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"
+                    ></i>
+                    <div>
+                      <p class="font-semibold text-navy-900">Budget-Friendly</p>
+                      <p class="text-xs text-navy-900/60">
+                        Honest, transparent pricing
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i
+                      class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"
+                    ></i>
+                    <div>
+                      <p class="font-semibold text-navy-900">Personalized</p>
+                      <p class="text-xs text-navy-900/60">Shaped around you</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i
+                      class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"
+                    ></i>
+                    <div>
+                      <p class="font-semibold text-navy-900">Secure</p>
+                      <p class="text-xs text-navy-900/60">Verified suppliers</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i
+                      class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"
+                    ></i>
+                    <div>
+                      <p class="font-semibold text-navy-900">24×7 Help</p>
+                      <p class="text-xs text-navy-900/60">Always reachable</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- CONTACT                                      -->
+      <!-- ============================================ -->
+      <section
+        id="contact"
+        class="py-16 sm:py-24 bg-cream relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 dot-grid opacity-40 pointer-events-none"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+            <span class="eyebrow">Get In Touch</span>
+            <h2
+              class="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-900 mt-4 mb-3"
+              style="font-weight: 600"
+            >
+              Let's plan your
+              <span class="italic text-orange-500">next journey.</span>
+            </h2>
+            <p class="text-navy-900/70 text-base sm:text-lg">
+              Share a few details and we'll get back with the best routes, stays
+              and packages — usually within a few hours.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
+            <!-- Contact info -->
+            <div class="lg:col-span-2 space-y-5 reveal">
+              <div
+                class="bg-white border border-navy-900/8 rounded-2xl p-6 shadow-soft"
+              >
+                <h3
+                  class="font-display text-xl text-navy-900 mb-5"
+                  style="font-weight: 600"
+                >
+                  Reach Us
+                </h3>
+                <ul class="space-y-4 text-sm">
+                  <li class="flex items-start gap-3">
+                    <div
+                      class="h-10 w-10 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-navy-900">Address</p>
+                      <p class="text-navy-900/70">Karnal, Haryana, India</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <div
+                      class="h-10 w-10 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-navy-900">Phone</p>
+                      <p class="text-navy-900/70">
+                        <a
+                          href="tel:+917988816715"
+                          class="hover:text-orange-500"
+                          >+91 79888 16715</a
+                        ><br />
+                        <a
+                          href="tel:+919817816715"
+                          class="hover:text-orange-500"
+                          >+91 98178 16715</a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <div
+                      class="h-10 w-10 rounded-xl bg-[#25d366]/10 text-[#25d366] flex items-center justify-center flex-shrink-0"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-navy-900">WhatsApp</p>
+                      <p class="text-navy-900/70">
+                        <a
+                          href="https://wa.me/917988816715"
+                          target="_blank"
+                          rel="noopener"
+                          class="hover:text-orange-500"
+                          >+91 79888 16715</a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <div
+                      class="h-10 w-10 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-navy-900">Email</p>
+                      <p class="text-navy-900/70 break-all">
+                        <a
+                          href="mailto:myholidaymyjourney54@gmail.com"
+                          class="hover:text-orange-500"
+                          >myholidaymyjourney54@gmail.com</a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="mt-6 pt-5 border-t border-navy-900/8">
+                  <p class="font-semibold text-navy-900 mb-3 text-sm">
+                    Follow us
+                  </p>
+                  <div class="flex items-center gap-3">
+                    <a
+                      href="https://www.facebook.com/share/1CrZNMBKw1/"
+                      target="_blank"
+                      rel="noopener"
+                      class="h-10 w-10 rounded-full bg-[#1877f2] text-white flex items-center justify-center hover:scale-110 transition"
+                      aria-label="Facebook"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/myhojotravel?igsh=MXhxY25tN3F1MWhw"
+                      target="_blank"
+                      rel="noopener"
+                      class="h-10 w-10 rounded-full ig-gradient text-white flex items-center justify-center hover:scale-110 transition"
+                      aria-label="Instagram"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://wa.me/917988816715"
+                      target="_blank"
+                      rel="noopener"
+                      class="h-10 w-10 rounded-full bg-[#25d366] text-white flex items-center justify-center hover:scale-110 transition"
+                      aria-label="WhatsApp"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-navy-900 text-white rounded-2xl p-6 relative overflow-hidden"
+              >
+                <div
+                  class="absolute -top-6 -right-6 w-24 h-24 bg-orange-500/30 rounded-full blur-2xl"
+                ></div>
+                <div class="relative">
+                  <p
+                    class="text-xs uppercase tracking-widest text-gold-400 font-bold mb-2"
+                  >
+                    Prefer to talk now?
+                  </p>
+                  <p
+                    class="font-display text-2xl mb-4"
+                    style="font-weight: 600"
+                  >
+                    We're just one click away.
+                  </p>
+                  <div class="flex gap-2">
+                    <a
+                      href="tel:+917988816715"
+                      class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-white text-navy-900 text-sm font-bold hover:bg-gold-400 transition"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </a>
+                    <a
+                      href="https://wa.me/917988816715"
+                      target="_blank"
+                      rel="noopener"
+                      class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-[#25d366] text-white text-sm font-bold hover:bg-[#1da851] transition"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="lg:col-span-3 reveal" style="transition-delay: 120ms">
+              <div
+                class="bg-white border border-navy-900/8 rounded-2xl p-6 sm:p-8 shadow-soft"
+              >
+                <div class="flex items-start justify-between mb-6">
+                  <div>
+                    <h3
+                      class="font-display text-2xl text-navy-900"
+                      style="font-weight: 600"
+                    >
+                      Share your travel plans
+                    </h3>
+                    <p class="text-sm text-navy-900/60 mt-1">
+                      Fill this once. We'll WhatsApp you back with a
+                      personalised quote.
+                    </p>
+                  </div>
+                  <div
+                    class="hidden sm:flex h-12 w-12 rounded-2xl bg-orange-500 text-white items-center justify-center"
+                  >
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </div>
+                </div>
+
+                <form id="contactForm" class="space-y-5">
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="name" class="input-label"
+                        >Full Name <span class="text-orange-500">*</span></label
+                      >
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        required
+                        class="input-field"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div>
+                      <label for="phone" class="input-label"
+                        >Phone <span class="text-orange-500">*</span></label
+                      >
+                      <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        required
+                        pattern="[0-9+\s]{7,15}"
+                        class="input-field"
+                        placeholder="+91 9XXXXXXXXX"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="email" class="input-label"
+                        >Email
+                        <span class="text-navy-900/40 font-normal normal-case"
+                          >(optional)</span
+                        ></label
+                      >
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        class="input-field"
+                        placeholder="you@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label for="service" class="input-label"
+                        >Interested In</label
+                      >
+                      <select id="service" name="service" class="input-field">
+                        <option value="">Select a service</option>
+                        <option>Domestic Tour Package</option>
+                        <option>International Tour Package</option>
+                        <option>Customized Tour Package</option>
+                        <option>Honeymoon Package</option>
+                        <option>Religious / Spiritual Tour</option>
+                        <option>Group Tour</option>
+                        <option>Flight Booking</option>
+                        <option>Hotel Booking</option>
+                        <option>Train / Bus / Cab Booking</option>
+                        <option>Passport / Visa Assistance</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="destination" class="input-label"
+                        >Destination</label
+                      >
+                      <input
+                        id="destination"
+                        name="destination"
+                        type="text"
+                        class="input-field"
+                        placeholder="e.g. Manali, Goa, Dubai"
+                      />
+                    </div>
+                    <div>
+                      <label for="travelDate" class="input-label"
+                        >Travel Date</label
+                      >
+                      <input
+                        id="travelDate"
+                        name="travelDate"
+                        type="text"
+                        class="input-field"
+                        placeholder="Approx. dates / month"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="message" class="input-label"
+                      >Trip Details
+                      <span class="text-orange-500">*</span></label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      class="input-field"
+                      placeholder="Share your travel dates, number of travellers, budget, and any special requirements."
+                    ></textarea>
+                  </div>
+
+                  <p class="text-[11px] text-navy-900/55">
+                    Tip: Hit submit and we'll open WhatsApp with your enquiry
+                    pre-filled — just press send. By submitting, you authorize
+                    MyHoJo Travels to contact you regarding your enquiry.
+                  </p>
+
+                  <button
+                    type="submit"
+                    class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-400 shadow-lg shadow-orange-500/30 transition"
+                  >
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Send Enquiry via WhatsApp</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="bg-navy-950 text-white pt-14 pb-6 relative overflow-hidden">
+      <div
+        class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-gold-500 to-orange-500"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-12 gap-8 mb-10">
+          <div class="md:col-span-5">
+            <a href="#top" class="flex items-center gap-3 mb-4">
+              <img
+                src="https://infokey-public-1.s3.ap-south-1.amazonaws.com/n8n-websites/myhojotravels/props/hojo-travels-logo.png"
+                alt="Hojo Travels"
+                loading="lazy"
+                style="width: 50px"
+              />
+              <div>
+                <p class="font-display text-2xl" style="font-weight: 700">
+                  My<span class="text-orange-500">Ho</span>Jo
+                  <span class="font-normal text-white/80">Travels</span>
+                </p>
+                <p class="text-xs text-gold-400 tracking-widest uppercase">
+                  My Holiday · My Journey
+                </p>
+              </div>
+            </a>
+            <p class="text-sm text-white/70 leading-relaxed max-w-md mb-4">
+              Complete travel planning from Karnal, Haryana — domestic and
+              international tours, holidays, tickets, visas and on-trip
+              assistance, all tailored to your budget.
+            </p>
+            <p class="font-hindi italic text-gold-400">
+              सपनों की यात्रा, आपके बजट में।
+            </p>
+          </div>
+
+          <div class="md:col-span-3">
+            <h4
+              class="font-display text-base text-white mb-4"
+              style="font-weight: 600"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li>
+                <a href="#services" class="hover:text-orange-400">Services</a>
+              </li>
+              <li>
+                <a href="#destinations" class="hover:text-orange-400"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#why-us" class="hover:text-orange-400"
+                  >Why Choose Us</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-orange-400">About Us</a>
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-orange-400">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-4">
+            <h4
+              class="font-display text-base text-white mb-4"
+              style="font-weight: 600"
+            >
+              Get In Touch
+            </h4>
+            <ul class="space-y-3 text-sm text-white/70">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-orange-400 mt-1"></i>
+                <span>Karnal, Haryana, India</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-phone text-orange-400 mt-1"></i>
+                <div>
+                  <a
+                    href="tel:+917988816715"
+                    class="block hover:text-orange-400"
+                    >+91 79888 16715</a
+                  >
+                  <a
+                    href="tel:+919817816715"
+                    class="block hover:text-orange-400"
+                    >+91 98178 16715</a
+                  >
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-envelope text-orange-400 mt-1"></i>
+                <a
+                  href="mailto:myholidaymyjourney54@gmail.com"
+                  class="hover:text-orange-400 break-all"
+                  >myholidaymyjourney54@gmail.com</a
+                >
+              </li>
+            </ul>
+            <div class="mt-5 flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/share/1CrZNMBKw1/"
+                target="_blank"
+                rel="noopener"
+                class="h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-[#1877f2] transition"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f text-sm"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/myhojotravel?igsh=MXhxY25tN3F1MWhw"
+                target="_blank"
+                rel="noopener"
+                class="h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-gradient-to-tr hover:from-pink-500 hover:to-orange-500 transition"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+              <a
+                href="https://wa.me/917988816715"
+                target="_blank"
+                rel="noopener"
+                class="h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-[#25d366] transition"
+                aria-label="WhatsApp"
+              >
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50"
+        >
+          <p>
+            © <span id="year"></span> MyHoJo Travels (My Holiday My Journey).
+            All rights reserved.
+          </p>
+          <p>
+            Made with <i class="fa-solid fa-heart text-orange-400"></i> for
+            travellers.
+          </p>
         </div>
       </div>
+    </footer>
+
+    <!-- Floating WhatsApp button -->
+    <a
+      href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip."
+      target="_blank"
+      rel="noopener"
+      class="fab-whatsapp"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+      <i class="fa-solid fa-circle-check text-[#25d366] mr-2"></i>
+      Opening WhatsApp with your enquiry…
     </div>
 
-    <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
-      <p>© <span id="year"></span> MyHoJo Travels (My Holiday My Journey). All rights reserved.</p>
-      <p>Made with <i class="fa-solid fa-heart text-orange-400"></i> for travellers.</p>
-    </div>
-  </div>
-</footer>
+    <script>
+      // === Mobile menu ===
+      const menuBtn = document.getElementById("menuBtn");
+      const menuIcon = document.getElementById("menuIcon");
+      const mobileMenu = document.getElementById("mobileMenu");
 
-<!-- Floating WhatsApp button -->
-<a href="https://wa.me/917988816715?text=Hi%20MyHoJo%20Travel%2C%20I%27d%20like%20to%20enquire%20about%20a%20trip." target="_blank" rel="noopener" class="fab-whatsapp" aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<!-- Toast -->
-<div id="toast" class="toast">
-  <i class="fa-solid fa-circle-check text-[#25d366] mr-2"></i>
-  Opening WhatsApp with your enquiry…
-</div>
-
-<script>
-  // === Mobile menu ===
-  const menuBtn = document.getElementById('menuBtn');
-  const menuIcon = document.getElementById('menuIcon');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
-      const open = mobileMenu.classList.toggle('open');
-      menuIcon.classList.toggle('fa-bars', !open);
-      menuIcon.classList.toggle('fa-xmark', open);
-    });
-    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuIcon.classList.add('fa-bars');
-      menuIcon.classList.remove('fa-xmark');
-    }));
-  }
-
-  // === Reveal on scroll ===
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // === Contact form → WhatsApp ===
-  const form = document.getElementById('contactForm');
-  const toast = document.getElementById('toast');
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const fd = new FormData(form);
-      const name = (fd.get('name') || '').toString().trim();
-      const phone = (fd.get('phone') || '').toString().trim();
-      const email = (fd.get('email') || '').toString().trim();
-      const service = (fd.get('service') || '').toString().trim();
-      const destination = (fd.get('destination') || '').toString().trim();
-      const travelDate = (fd.get('travelDate') || '').toString().trim();
-      const message = (fd.get('message') || '').toString().trim();
-
-      if (!name || !phone || !message) {
-        alert('Please fill in your name, phone and trip details.');
-        return;
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          const open = mobileMenu.classList.toggle("open");
+          menuIcon.classList.toggle("fa-bars", !open);
+          menuIcon.classList.toggle("fa-xmark", open);
+        });
+        mobileMenu.querySelectorAll("a").forEach((a) =>
+          a.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+            menuIcon.classList.add("fa-bars");
+            menuIcon.classList.remove("fa-xmark");
+          }),
+        );
       }
 
-      let text = `Hi MyHoJo Travels! 🙏\n\nI'd like to enquire about a trip.\n\n`;
-      text += `*Name:* ${name}\n`;
-      text += `*Phone:* ${phone}\n`;
-      if (email) text += `*Email:* ${email}\n`;
-      if (service) text += `*Service:* ${service}\n`;
-      if (destination) text += `*Destination:* ${destination}\n`;
-      if (travelDate) text += `*Travel Date:* ${travelDate}\n`;
-      text += `\n*Details:*\n${message}`;
+      // === Reveal on scroll ===
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-      const url = `https://wa.me/917988816715?text=${encodeURIComponent(text)}`;
+      // === Contact form → WhatsApp ===
+      const form = document.getElementById("contactForm");
+      const toast = document.getElementById("toast");
 
-      // Show toast
-      if (toast) {
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 3000);
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const fd = new FormData(form);
+          const name = (fd.get("name") || "").toString().trim();
+          const phone = (fd.get("phone") || "").toString().trim();
+          const email = (fd.get("email") || "").toString().trim();
+          const service = (fd.get("service") || "").toString().trim();
+          const destination = (fd.get("destination") || "").toString().trim();
+          const travelDate = (fd.get("travelDate") || "").toString().trim();
+          const message = (fd.get("message") || "").toString().trim();
+
+          if (!name || !phone || !message) {
+            alert("Please fill in your name, phone and trip details.");
+            return;
+          }
+
+          let text = `Hi MyHoJo Travels! 🙏\n\nI'd like to enquire about a trip.\n\n`;
+          text += `*Name:* ${name}\n`;
+          text += `*Phone:* ${phone}\n`;
+          if (email) text += `*Email:* ${email}\n`;
+          if (service) text += `*Service:* ${service}\n`;
+          if (destination) text += `*Destination:* ${destination}\n`;
+          if (travelDate) text += `*Travel Date:* ${travelDate}\n`;
+          text += `\n*Details:*\n${message}`;
+
+          const url = `https://wa.me/917988816715?text=${encodeURIComponent(text)}`;
+
+          // Show toast
+          if (toast) {
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3000);
+          }
+
+          // Slight delay so toast is visible, then open WhatsApp
+          setTimeout(() => {
+            window.open(url, "_blank", "noopener");
+          }, 200);
+        });
       }
 
-      // Slight delay so toast is visible, then open WhatsApp
-      setTimeout(() => {
-        window.open(url, '_blank', 'noopener');
-      }, 200);
-    });
-  }
-
-  // === Year ===
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-</script>
-
-</body>
+      // === Year ===
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
