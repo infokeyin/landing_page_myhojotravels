@@ -1,1 +1,1 @@
-Landing page of Lavannya Vesu Outfits for WaBM
+Landing page of MyHojoTravels for WaBM
